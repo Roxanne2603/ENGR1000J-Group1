@@ -1,0 +1,37 @@
+# Firmware build outputs and local tooling
+build/
+build-*/
+.pio/
+node_modules/
+__pycache__/
+*.py[cod]
+*.o
+*.obj
+*.a
+*.lib
+*.elf
+*.bin
+*.hex
+*.map
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.zip
+*.7z
+*.tmp
+*.bak
+*.lck
+~$*
+.venv/
+venv/
+.env
+.env.*
+.arduinoIDE/
+.vscode/
+.idea/
+.obsidian/
+.DS_Store
+Thumbs.db
+desktop.ini
+# Small, selected serial logs in data/ are intentional research evidence.

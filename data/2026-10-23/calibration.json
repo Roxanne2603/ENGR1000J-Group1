@@ -1,0 +1,143 @@
+{
+  "recorded_at": "2026-10-23T16:04:19.849957+08:00",
+  "status": "Initial estimates flashed; real speed/distance, reverse and range checks remain pending.",
+  "five_turn_start": [
+    0,
+    0
+  ],
+  "five_turn_end": [
+    4083,
+    -4135
+  ],
+  "five_turn_counts_per_turn": [
+    816.6,
+    827.0
+  ],
+  "left_extra1_start": 4083,
+  "left_extra1_end": 4908,
+  "left_extra1_delta": 825,
+  "left_combined6_count_per_turn": 818.0,
+  "next_baseline": [
+    11543,
+    -10714
+  ],
+  "user_direction_confirmation": "left five turns and additional one turn same as JOG L",
+  "source_encoder_sign": [
+    1,
+    -1
+  ],
+  "board_encoder_sign": [
+    1,
+    -1
+  ],
+  "flashed_this_update": true,
+  "images": [
+    {
+      "file": "cpr-round1-start-0-0.png",
+      "sha256": "57D3C9CDBE8868765B7929226E4E3263B6EE3CAB715737432E15D75AC159F45D"
+    },
+    {
+      "file": "cpr-round1-end-4083--4135.png",
+      "sha256": "7673BE7A3AE558826274A4D3C08BA66657E52AF92929E31B21B1A8A8151C1BF4"
+    },
+    {
+      "file": "cpr-left-extra1-end-4908--4135.png",
+      "sha256": "E3B320422393644454BE220000327776F08C4E13B30639F863A9EB7AED1352C3"
+    }
+  ],
+  "CPR4_written": true,
+  "wheel_diameter_written": true,
+  "round2": {
+    "start": [
+      4908,
+      -4135
+    ],
+    "delta": [
+      4158,
+      -4122
+    ],
+    "turns": [
+      5,
+      5
+    ],
+    "counts_per_turn": [
+      831.6,
+      824.4
+    ],
+    "end": [
+      9066,
+      -8257
+    ]
+  },
+  "pooled_counts_per_turn": [
+    824.1818181818,
+    825.7
+  ],
+  "source_CPR4": [
+    824.2,
+    825.7
+  ],
+  "board_CPR4": [
+    824.2,
+    825.7
+  ],
+  "repeat_spread_percent": [
+    1.8201674554,
+    0.3148843406
+  ],
+  "round2_image_sha256": "75D895224BD9CFA6E6CD03C0BCAED553432B88FFD8949376FB043BD5A484F1E6",
+  "extra_three_turn_observation": {
+    "start": [
+      9066,
+      -8257
+    ],
+    "end": [
+      11543,
+      -10714
+    ],
+    "turns": [
+      3,
+      3
+    ],
+    "ground_or_hand_turn": "not confirmed",
+    "delta": [
+      2477,
+      -2457
+    ],
+    "counts_per_turn": [
+      825.6666666666666,
+      819.0
+    ],
+    "rolling_distance_mm": null
+  },
+  "rolling_measurement": {
+    "turns": [
+      3,
+      3
+    ],
+    "raw_ticks_image": [
+      13964,
+      -13236
+    ],
+    "distance_mm": [
+      650,
+      650
+    ],
+    "source": "user says both three turns 65 cm",
+    "image_sha256": "B86DDF77EEEE16C1C4B17B3FBB55C023935B7E60D7F12E97E97BF5086EDD66C5",
+    "load_and_slip_independently_verified": false,
+    "circumference_mm": [
+      216.66666666666666,
+      216.66666666666666
+    ],
+    "effective_diameter_mm": [
+      68.96714200648798,
+      68.96714200648798
+    ]
+  },
+  "board_wheel_diameter_mm": [
+    68.96714200648798,
+    68.96714200648798
+  ],
+  "current_flash_evidence": "verification-wheelcal.json"
+}

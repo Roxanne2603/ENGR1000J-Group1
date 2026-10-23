@@ -1,0 +1,4 @@
+policy_tests.cpp
+PASS: 36 stopping-envelope combinations; steering, stale/invalid/NaN, clearances, overspeed envelope, acceleration/deceleration, curvature, wheel cap, millis wrap.
+default_gate.cpp
+PASS: delivered production configuration refuses autonomous arming until measured commissioning.

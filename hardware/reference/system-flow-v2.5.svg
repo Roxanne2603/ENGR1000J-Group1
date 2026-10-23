@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc"><title id="title">System Flow Chart - ESP32 test system v2.5</title><desc id="desc">Three ToF sensors feed the ESP32. The ESP32 controls an AT8236 dual motor driver and steering servo. Left and right motor encoders return to the ESP32. A 3S battery feeds a parallel splitter: A goes to the regulator and fixed 5V servo supply; B is a pending motor-driver supply. The ESP32 uses computer USB power. Branch B stays disconnected pending voltage compatibility and current checks.</desc><defs><marker id="control-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4.5 L0,9 Z" fill="#2461A0"/></marker><marker id="feedback-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4.5 L0,9 Z" fill="#21805D"/></marker><marker id="power-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4.5 L0,9 Z" fill="#BE4A3B"/></marker></defs><rect width="1600" height="1000" fill="#FFFFFF"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif"><text x="60" y="54" font-size="36" font-weight="600" text-anchor="start" fill="#183247">System Flow Chart</text>
+<text x="60" y="87" font-size="19" font-weight="400" text-anchor="start" fill="#546676">系统框图 · ESP32测试系统 · 并联一拖二供电 · v2.5</text>
+<path d="M720,77 L785,77" fill="none" stroke="#2461A0" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#control-arrow)"/>
+<text x="799" y="84" font-size="17" font-weight="400" text-anchor="start" fill="#183247">控制信号</text>
+<path d="M985,77 L1050,77" fill="none" stroke="#21805D" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#feedback-arrow)"/>
+<text x="1064" y="84" font-size="17" font-weight="400" text-anchor="start" fill="#183247">传感器 / 编码器反馈</text>
+<path d="M1310,77 L1375,77" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="1389" y="84" font-size="17" font-weight="400" text-anchor="start" fill="#183247">电源 / 动力</text>
+<rect x="40" y="225" width="285" height="305" rx="5" fill="#FAFCFD" stroke="#BAC6D0" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="182.5" y="252" font-size="21" font-weight="600" text-anchor="middle" fill="#183247">Sensors</text>
+<text x="182.5" y="276" font-size="16" font-weight="400" text-anchor="middle" fill="#546676">传感器</text>
+<rect x="390" y="225" width="300" height="305" rx="5" fill="#FAFCFD" stroke="#BAC6D0" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="540" y="252" font-size="21" font-weight="600" text-anchor="middle" fill="#183247">Controller</text>
+<text x="540" y="276" font-size="16" font-weight="400" text-anchor="middle" fill="#546676">主控制器</text>
+<rect x="790" y="225" width="270" height="305" rx="5" fill="#FAFCFD" stroke="#BAC6D0" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="925" y="252" font-size="21" font-weight="600" text-anchor="middle" fill="#183247">Driver</text>
+<text x="925" y="276" font-size="16" font-weight="400" text-anchor="middle" fill="#546676">电机驱动</text>
+<rect x="1160" y="225" width="380" height="470" rx="5" fill="#FAFCFD" stroke="#BAC6D0" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="1350" y="252" font-size="21" font-weight="600" text-anchor="middle" fill="#183247">Actuators</text>
+<text x="1350" y="276" font-size="16" font-weight="400" text-anchor="middle" fill="#546676">执行机构</text>
+<rect x="40" y="750" width="1500" height="145" rx="5" fill="#FAFCFD" stroke="#BAC6D0" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="60" y="733" font-size="21" font-weight="600" text-anchor="start" fill="#183247">Power supply  /  电源分配</text>
+<path d="M305,325 L420,325" fill="none" stroke="#21805D" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#feedback-arrow)"/>
+<text x="362" y="311" font-size="16" font-weight="400" text-anchor="middle" fill="#21805D">测距 I²C</text>
+<text x="362" y="351" font-size="15" font-weight="400" text-anchor="middle" fill="#21805D">GPIO21/22</text>
+<path d="M420,410 L305,410" fill="none" stroke="#2461A0" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#control-arrow)"/>
+<text x="363" y="457" font-size="15" font-weight="400" text-anchor="middle" fill="#2461A0">XSH 4/17/13</text>
+<path d="M660,335 L810,335" fill="none" stroke="#2461A0" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#control-arrow)"/>
+<text x="735" y="315" font-size="17" font-weight="400" text-anchor="middle" fill="#2461A0">PWM / 方向</text>
+<text x="735" y="363" font-size="15" font-weight="400" text-anchor="middle" fill="#2461A0">25/26/32/33</text>
+<path d="M1040,315 L1185,315" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="1113" y="296" font-size="16" font-weight="400" text-anchor="middle" fill="#BE4A3B">AO1 / AO2</text>
+<path d="M1040,405 L1100,405 L1100,445 L1185,445" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="1113" y="477" font-size="16" font-weight="400" text-anchor="middle" fill="#BE4A3B">BO1 / BO2</text>
+<path d="M1210,285 L1210,185 L445,185 L445,285" fill="none" stroke="#21805D" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#feedback-arrow)"/>
+<text x="865" y="171" font-size="17" font-weight="400" text-anchor="middle" fill="#21805D">左编码器 A/B → GPIO18/19</text>
+<path d="M1490,445 L1560,445 L1560,140 L635,140 L635,285" fill="none" stroke="#21805D" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#feedback-arrow)"/>
+<text x="900" y="126" font-size="17" font-weight="400" text-anchor="middle" fill="#21805D">右编码器 A/B → GPIO34/35</text>
+<path d="M550,450 L550,585 L1185,585" fill="none" stroke="#2461A0" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#control-arrow)"/>
+<text x="850" y="570" font-size="18" font-weight="400" text-anchor="middle" fill="#2461A0">舵机 PWM · GPIO14（橙黄线）</text>
+<path d="M290,827 L405,827" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="347" y="805" font-size="16" font-weight="400" text-anchor="middle" fill="#BE4A3B">主电源</text>
+<path d="M645,827 L815,827" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="730" y="805" font-size="18" font-weight="400" text-anchor="middle" fill="#BE4A3B">A路 · DC</text>
+<path d="M525,775 L525,735 L740,735 L740,600" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4"/>
+<path d="M740,570 L740,470 L925,470 L925,450" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="829" y="672" font-size="17" font-weight="400" text-anchor="middle" fill="#BE4A3B">B路 · 原电池电压</text>
+<text x="1000" y="478" font-size="16" font-weight="400" text-anchor="middle" fill="#BE4A3B">Vin＋ / Vin−</text>
+<rect x="765" y="493" width="335" height="32" rx="5" fill="#FFF3DC" stroke="#E1B36B" stroke-width="1.5"/>
+<text x="932" y="515" font-size="17" font-weight="400" text-anchor="middle" fill="#8B530B">B路暂不接：待核兼容与载流</text>
+<path d="M1040,827 L1100,827 L1100,650 L1185,650" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="1160" y="719" font-size="18" font-weight="400" text-anchor="middle" fill="#BE4A3B">固定5V</text>
+<path d="M490,625 L490,450" fill="none" stroke="#BE4A3B" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="10 4 2 4" marker-end="url(#power-arrow)"/>
+<text x="454" y="564" font-size="16" font-weight="400" text-anchor="middle" fill="#BE4A3B">USB 5V</text>
+<rect x="60" y="285" width="245" height="150" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="182" y="320" font-size="23" font-weight="600" text-anchor="middle" fill="#183247">VL53L0X × 3</text>
+<text x="182" y="358" font-size="20" font-weight="400" text-anchor="middle" fill="#183247">正前 / 左 / 右</text>
+<text x="182" y="398" font-size="19" font-weight="400" text-anchor="middle" fill="#546676">测距传感器</text>
+<rect x="420" y="285" width="240" height="165" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="540" y="321" font-size="25" font-weight="600" text-anchor="middle" fill="#183247">ESP32</text>
+<text x="540" y="351" font-size="18" font-weight="400" text-anchor="middle" fill="#183247">WROOM-32E 测试板</text>
+<text x="540" y="391" font-size="18" font-weight="400" text-anchor="middle" fill="#546676">读取测距与编码器</text>
+<text x="540" y="421" font-size="18" font-weight="400" text-anchor="middle" fill="#546676">输出驱动 / 舵机信号</text>
+<rect x="810" y="285" width="230" height="165" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="925" y="325" font-size="25" font-weight="600" text-anchor="middle" fill="#183247">AT8236</text>
+<text x="925" y="362" font-size="20" font-weight="400" text-anchor="middle" fill="#183247">双路电机驱动</text>
+<text x="925" y="406" font-size="16" font-weight="400" text-anchor="middle" fill="#546676">AN1/AN2 · BN1/BN2</text>
+<rect x="1185" y="285" width="305" height="75" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="1337" y="315" font-size="22" font-weight="600" text-anchor="middle" fill="#183247">左520电机</text>
+<text x="1337" y="345" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">驱动车轮 + A/B编码器</text>
+<rect x="1185" y="410" width="305" height="80" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="1337" y="442" font-size="22" font-weight="600" text-anchor="middle" fill="#183247">右520电机</text>
+<text x="1337" y="473" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">驱动车轮 + A/B编码器</text>
+<rect x="1185" y="560" width="305" height="110" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="1337" y="592" font-size="22" font-weight="600" text-anchor="middle" fill="#183247">20kg舵机</text>
+<text x="1337" y="623" font-size="19" font-weight="400" text-anchor="middle" fill="#183247">转向执行机构</text>
+<text x="1337" y="652" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">红：＋  棕：−  橙黄：信号</text>
+<rect x="405" y="625" width="240" height="85" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="525" y="658" font-size="21" font-weight="600" text-anchor="middle" fill="#183247">电脑USB（5V）</text>
+<text x="525" y="689" font-size="18" font-weight="400" text-anchor="middle" fill="#546676">仅给ESP32供电</text>
+<rect x="60" y="775" width="230" height="105" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="175" y="809" font-size="22" font-weight="600" text-anchor="middle" fill="#183247">3S锂电池</text>
+<text x="175" y="839" font-size="17" font-weight="400" text-anchor="middle" fill="#183247">标称11.1V · 1300mAh</text>
+<text x="175" y="868" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">满电12.6V</text>
+<rect x="405" y="775" width="240" height="105" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="525" y="810" font-size="23" font-weight="600" text-anchor="middle" fill="#183247">并联一拖二</text>
+<text x="525" y="842" font-size="17" font-weight="400" text-anchor="middle" fill="#183247">一个输入 / 两个输出</text>
+<text x="525" y="870" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">只分路，不降压</text>
+<rect x="815" y="775" width="225" height="105" rx="5" fill="#FFFFFF" stroke="#829BAE" stroke-width="1.5"/>
+<text x="927" y="810" font-size="20" font-weight="600" text-anchor="middle" fill="#183247">MP2491C降压板</text>
+<text x="927" y="842" font-size="16" font-weight="400" text-anchor="middle" fill="#183247">DC输入 · 固定5V输出</text>
+<text x="927" y="870" font-size="17" font-weight="400" text-anchor="middle" fill="#546676">VADJ留空</text>
+<text x="60" y="925" font-size="17" font-weight="400" text-anchor="start" fill="#546676">低压外设：ToF与编码器由ESP32的3.3V供电，供电线为简洁未逐根画出。</text>
+<text x="60" y="953" font-size="17" font-weight="400" text-anchor="start" fill="#546676">共地：ESP32 GND、驱动信号GND、降压GND与电池负极参考相通；电机M−不是GND。</text>
+<text x="60" y="981" font-size="17" font-weight="400" text-anchor="start" fill="#8B530B">电源箭头代表成对电源线。图为连接规划，非整机验收；B路须先核驱动3S满电兼容及线束载流。</text></g></svg>

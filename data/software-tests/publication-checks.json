@@ -1,0 +1,18 @@
+{
+  "log_analysis": "passed on both published raw logs",
+  "valid_window_valid_counts": [
+    150,
+    75,
+    75
+  ],
+  "latest_startup_valid_counts": [
+    0,
+    0,
+    0
+  ],
+  "cpp_test_compile": "policy_tests.cpp compiled",
+  "cpp_test_execution": "not run: Windows Application Control blocked generated executable",
+  "default_gate_test": "not reached during this publication run",
+  "prior_controller_source_sha256_unchanged": true,
+  "limitations": "Prior 2026-10-22 test logs are historical, not current runtime evidence."
+}

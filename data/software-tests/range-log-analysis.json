@@ -1,0 +1,140 @@
+{
+  "range-valid-window": {
+    "sensors": [
+      {
+        "sensor": "front",
+        "logged_attempts": 150,
+        "logged_valid": 150,
+        "logged_valid_rate": 1.0,
+        "valid_gap_max_ms": 80,
+        "valid_gap_p95_ms": 80,
+        "head_ms": 0,
+        "tail_ms": 39,
+        "logged_duration_ms": 11959,
+        "worst_observed_no_new_data_ms": 7200,
+        "api_error_counts": {
+          "0": 150
+        },
+        "range_status_counts": {
+          "0": 150
+        },
+        "mean_raw_mm": 240.04,
+        "min_raw_mm": 201,
+        "max_raw_mm": 283
+      },
+      {
+        "sensor": "left",
+        "logged_attempts": 75,
+        "logged_valid": 75,
+        "logged_valid_rate": 1.0,
+        "valid_gap_max_ms": 160,
+        "valid_gap_p95_ms": 160,
+        "head_ms": 0,
+        "tail_ms": 39,
+        "logged_duration_ms": 11879,
+        "worst_observed_no_new_data_ms": 83840,
+        "api_error_counts": {
+          "0": 75
+        },
+        "range_status_counts": {
+          "0": 75
+        },
+        "mean_raw_mm": 61.4,
+        "min_raw_mm": 24,
+        "max_raw_mm": 201
+      },
+      {
+        "sensor": "right",
+        "logged_attempts": 75,
+        "logged_valid": 75,
+        "logged_valid_rate": 1.0,
+        "valid_gap_max_ms": 160,
+        "valid_gap_p95_ms": 160,
+        "head_ms": 0,
+        "tail_ms": 39,
+        "logged_duration_ms": 11879,
+        "worst_observed_no_new_data_ms": 127040,
+        "api_error_counts": {
+          "0": 75
+        },
+        "range_status_counts": {
+          "0": 75
+        },
+        "mean_raw_mm": 74.76,
+        "min_raw_mm": 44,
+        "max_raw_mm": 185
+      }
+    ],
+    "limitations": "Logged samples only; UART can skip rows. Online gap maxima supplement logs, but cannot prove a future latency bound. Invalid/no-target ranges are not evidence of free space. Bias from a fixed stationary geometry is not a universal calibration."
+  },
+  "startup-wheelcal": {
+    "sensors": [
+      {
+        "sensor": "front",
+        "logged_attempts": 135,
+        "logged_valid": 0,
+        "logged_valid_rate": 0.0,
+        "valid_gap_max_ms": null,
+        "valid_gap_p95_ms": null,
+        "head_ms": null,
+        "tail_ms": null,
+        "logged_duration_ms": 10765,
+        "worst_observed_no_new_data_ms": 10765,
+        "api_error_counts": {
+          "0": 135
+        },
+        "range_status_counts": {
+          "4": 108,
+          "2": 27
+        },
+        "mean_raw_mm": null,
+        "min_raw_mm": null,
+        "max_raw_mm": null
+      },
+      {
+        "sensor": "left",
+        "logged_attempts": 67,
+        "logged_valid": 0,
+        "logged_valid_rate": 0.0,
+        "valid_gap_max_ms": null,
+        "valid_gap_p95_ms": null,
+        "head_ms": null,
+        "tail_ms": null,
+        "logged_duration_ms": 10599,
+        "worst_observed_no_new_data_ms": 10599,
+        "api_error_counts": {
+          "0": 67
+        },
+        "range_status_counts": {
+          "2": 58,
+          "4": 9
+        },
+        "mean_raw_mm": null,
+        "min_raw_mm": null,
+        "max_raw_mm": null
+      },
+      {
+        "sensor": "right",
+        "logged_attempts": 67,
+        "logged_valid": 0,
+        "logged_valid_rate": 0.0,
+        "valid_gap_max_ms": null,
+        "valid_gap_p95_ms": null,
+        "head_ms": null,
+        "tail_ms": null,
+        "logged_duration_ms": 10599,
+        "worst_observed_no_new_data_ms": 10599,
+        "api_error_counts": {
+          "0": 67
+        },
+        "range_status_counts": {
+          "2": 67
+        },
+        "mean_raw_mm": null,
+        "min_raw_mm": null,
+        "max_raw_mm": null
+      }
+    ],
+    "limitations": "Logged samples only; UART can skip rows. Online gap maxima supplement logs, but cannot prove a future latency bound. Invalid/no-target ranges are not evidence of free space. Bias from a fixed stationary geometry is not a universal calibration."
+  }
+}

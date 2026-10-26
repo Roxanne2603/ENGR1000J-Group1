@@ -1,0 +1,105 @@
+{
+  "verified_at": "2026-10-23T16:23:47.7146896+08:00",
+  "mapping": {
+    "front": 4,
+    "left": 13,
+    "right": 17
+  },
+  "motor_sign": [
+    1,
+    -1
+  ],
+  "encoder_sign": [
+    1,
+    -1
+  ],
+  "CPR4": [
+    824.2,
+    825.7
+  ],
+  "wheel_diameter_mm": [
+    68.96714200648798,
+    68.96714200648798
+  ],
+  "direction_checked": true,
+  "commissioned": false,
+  "sources": [
+    {
+      "file": "track_racer.ino",
+      "sha256": "BB0D72E70FECFD538AA7A7C54A25A48C49A4FC1653DE5DA6147A9A783864C2E5"
+    },
+    {
+      "file": "config.h",
+      "sha256": "18F565809D0F7EC534B187BC44CC5AC8C95AA18F087E3E421AD59D7CB7BED4A0"
+    },
+    {
+      "file": "controller.h",
+      "sha256": "781027C984521359581F5B043E96F00867FFAB9CE684C196346EC37C5DBE0002"
+    }
+  ],
+  "compile": "passed: program 329595 bytes; static RAM 26560 bytes",
+  "flash_status": "PASSED: COM4 retry upload exit 0, all four image hashes verified",
+  "commands_sent": [],
+  "startup": {
+    "checked_at": "2026-10-23T16:21:27.3339007+08:00",
+    "mapping_banner": [
+      "TOF_MAP,front=4,left=13,right=17"
+    ],
+    "sign_banner": [
+      "DRIVE_SIGNS,motor=1/-1,encoder=1/-1,direction_checked=1,commissioned=0"
+    ],
+    "wheel_banner": [
+      "WHEEL_CAL,cpr4=824.2/825.7,diameter_mm=68.97/68.97"
+    ],
+    "control_rows": 90,
+    "modes": [
+      "0"
+    ],
+    "nonzero_motor_duty_rows": 0,
+    "boot_banner": 1,
+    "faults": 0,
+    "sensors": [
+      {
+        "sensor": 0,
+        "samples": 135,
+        "valid": 0
+      },
+      {
+        "sensor": 1,
+        "samples": 67,
+        "valid": 0
+      },
+      {
+        "sensor": 2,
+        "samples": 67,
+        "valid": 0
+      }
+    ],
+    "commands_sent": []
+  },
+  "physical_validation": "User-reported directions, manual multi-turn counts, both 3-turn rolling distances 650mm. True speed/braking/geometry/range accuracy unverified.",
+  "binaries_not_included": [
+    {
+      "file": "track_racer.ino.bootloader.bin",
+      "bytes": 24992,
+      "sha256": "47BBBFCA119FE87190F63A67AF9D85ADFF6433BCF3812EC92A9B9C9416A53AD1"
+    },
+    {
+      "file": "track_racer.ino.partitions.bin",
+      "bytes": 3072,
+      "sha256": "148B959CBFF1C38AA8E1D5C0BA9D612C54997B945E56A63F41223EEF650653A1"
+    },
+    {
+      "file": "boot_app0.bin",
+      "bytes": 8192,
+      "sha256": "F94C5D786A7A8FAB06AC5D10E33BF37711A6697636DC037559EA19CC410A17F0"
+    },
+    {
+      "file": "track_racer.ino.bin",
+      "bytes": 329744,
+      "sha256": "A064DB0B4291F34520741FA460704501E3FBB92D3688F1171C97AD8A85262825"
+    }
+  ],
+  "chip_family": "ESP32-D0WD-V3 revision 3.1",
+  "portable_note": "Paths and device MAC omitted; binary hashes document local flash verification, binaries are not published."
+}

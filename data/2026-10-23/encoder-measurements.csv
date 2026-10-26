@@ -1,0 +1,6 @@
+stage,left_start,right_start,left_end,right_end,left_turns,right_turns,source_image,note
+round1,0,0,4083,-4135,5,5,cpr-round1-end-4083--4135.png,user-reported turns
+left_extra1,4083,-4135,4908,-4135,1,0,cpr-left-extra1-end-4908--4135.png,left same direction as JOG L confirmed
+round2,4908,-4135,9066,-8257,5,5,cpr-round2-end-9066--8257.png,user-reported turns
+extra3,9066,-8257,11543,-10714,3,3,cpr-extra3-end-11543--10714.png,ground versus hand conditions not separately confirmed
+rolling_report,11543,-10714,13964,-13236,3,3,rolling-3turn-650mm-end-13964--13236.png,"650mm each reported in chat; screenshot shows counts, not ruler"

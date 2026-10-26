@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-23T16:21:27.3339007+08:00",
+  "mapping_banner": [
+    "TOF_MAP,front=4,left=13,right=17"
+  ],
+  "sign_banner": [
+    "DRIVE_SIGNS,motor=1/-1,encoder=1/-1,direction_checked=1,commissioned=0"
+  ],
+  "wheel_banner": [
+    "WHEEL_CAL,cpr4=824.2/825.7,diameter_mm=68.97/68.97"
+  ],
+  "control_rows": 90,
+  "modes": [
+    "0"
+  ],
+  "nonzero_motor_duty_rows": 0,
+  "boot_banner": 1,
+  "faults": 0,
+  "sensors": [
+    {
+      "sensor": 0,
+      "samples": 135,
+      "valid": 0
+    },
+    {
+      "sensor": 1,
+      "samples": 67,
+      "valid": 0
+    },
+    {
+      "sensor": 2,
+      "samples": 67,
+      "valid": 0
+    }
+  ],
+  "commands_sent": []
+}

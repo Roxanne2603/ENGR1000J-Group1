@@ -1,0 +1,55 @@
+{
+  "started_at": "2026-10-23T15:14:22.4024784+08:00",
+  "finished_at": "2026-10-23T15:14:34.5489874+08:00",
+  "mapping": {
+    "front": 4,
+    "right": 17,
+    "left": 13
+  },
+  "sensors": [
+    {
+      "sensor": 0,
+      "direction": "front",
+      "samples": 150,
+      "valid": 150,
+      "statuses": [
+        "0:150"
+      ],
+      "raw_mm_min": 201.0,
+      "raw_mm_max": 283.0,
+      "raw_mm_mean": 240.04
+    },
+    {
+      "sensor": 1,
+      "direction": "left",
+      "samples": 75,
+      "valid": 75,
+      "statuses": [
+        "0:75"
+      ],
+      "raw_mm_min": 24.0,
+      "raw_mm_max": 201.0,
+      "raw_mm_mean": 61.4
+    },
+    {
+      "sensor": 2,
+      "direction": "right",
+      "samples": 75,
+      "valid": 75,
+      "statuses": [
+        "0:75"
+      ],
+      "raw_mm_min": 44.0,
+      "raw_mm_max": 185.0,
+      "raw_mm_mean": 74.76
+    }
+  ],
+  "control_rows": 100,
+  "modes": [
+    "0"
+  ],
+  "nonzero_motor_duty_rows": 0,
+  "faults": 0,
+  "commands_sent": [],
+  "target_truth_mm": null
+}

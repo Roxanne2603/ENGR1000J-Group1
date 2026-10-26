@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210">
+  <style>
+    text{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#111}
+    .t{font-size:5.6px;font-weight:bold}
+    .d{font-size:4px}
+    .l{font-size:3.4px}
+    .n{font-size:2.8px;fill:#333}
+    .s{stroke:#111;stroke-width:.3}
+    .e{stroke:#888;stroke-width:.15}
+  </style>
+  <rect width="297" height="210" fill="#fff"/>
+
+  <text class="t" x="148" y="12" text-anchor="middle">整车元件布局图（俯视图 · 比例 0.8:1）</text>
+  <text class="n" x="148" y="18" text-anchor="middle">车头朝右　元件位置为建议值，以实际装配为准　标注尺寸均为实际毫米</text>
+
+  <!-- 天线净空区 -->
+  <rect x="21" y="78.8" width="12" height="52.8" fill="#cc0000" opacity=".12"/>
+  <rect x="21" y="78.8" width="12" height="52.8" fill="none" stroke="#cc0000" stroke-width=".3" stroke-dasharray="2.5 1.2"/>
+  <text class="n" x="26" y="102" text-anchor="middle" fill="#cc0000" transform="rotate(-90 26 102)">天线净空 15</text>
+
+  <!-- 车轮 -->
+  <circle cx="65" cy="49.2" r="17.2" fill="#2b2b2b" opacity=".16" stroke="#111" stroke-width=".4"/>
+  <circle cx="65" cy="161.2" r="17.2" fill="#2b2b2b" opacity=".16" stroke="#111" stroke-width=".4"/>
+  <circle cx="209" cy="49.2" r="17.2" fill="#2b2b2b" opacity=".16" stroke="#111" stroke-width=".4"/>
+  <circle cx="209" cy="161.2" r="17.2" fill="#2b2b2b" opacity=".16" stroke="#111" stroke-width=".4"/>
+  <text class="n" x="65" y="50" text-anchor="middle">后轮</text>
+  <text class="n" x="65" y="162" text-anchor="middle">后轮</text>
+  <text class="n" x="209" y="50" text-anchor="middle">前轮</text>
+  <text class="n" x="209" y="162" text-anchor="middle">前轮</text>
+
+  <!-- 底板 -->
+  <rect x="45" y="57.2" width="184" height="96" fill="#f6f6f6" stroke="#111" stroke-width=".5"/>
+
+  <!-- 角铝 -->
+  <rect x="45" y="57.2" width="184" height="8" fill="#9aa7b5" opacity=".5" stroke="#111" stroke-width=".25"/>
+  <rect x="45" y="145.2" width="184" height="8" fill="#9aa7b5" opacity=".5" stroke="#111" stroke-width=".25"/>
+  <text class="n" x="63.4" y="62.8" text-anchor="middle" font-size="2.5">角铝 10×10×1 ×2</text>
+
+  <!-- 轴线 -->
+  <line x1="65" y1="32" x2="65" y2="178" class="e" stroke-dasharray="4 2"/>
+  <line x1="209" y1="32" x2="209" y2="178" class="e" stroke-dasharray="4 2"/>
+
+  <!-- 电控托盘 -->
+  <rect x="33" y="78.8" width="65.6" height="52.8" fill="#dce9f7" stroke="#111" stroke-width=".5"/>
+  <rect x="33" y="78.8" width="12" height="52.8" fill="#cc0000" opacity=".10"/>
+  <line x1="33" y1="78.8" x2="33" y2="131.6" stroke="#cc0000" stroke-width=".3" stroke-dasharray="2 1.2"/>
+  <text class="l" x="68" y="97" text-anchor="middle">电控托盘 82 × 66</text>
+  <text class="n" x="68" y="103" text-anchor="middle">ESP32 / TB6612</text>
+  <text class="n" x="68" y="108" text-anchor="middle">MINI560 ×2</text>
+  <text class="n" x="55" y="116" text-anchor="middle" fill="#a00">天线朝后</text>
+  <text class="n" x="86" y="116" text-anchor="middle" fill="#1a5">USB 朝前</text>
+  <text class="n" x="86" y="121" text-anchor="middle" fill="#1a5">前方留 20</text>
+
+  <!-- 电池 -->
+  <rect x="117" y="63.6" width="82.4" height="14.4" fill="#e8e0f0" stroke="#111" stroke-width=".5"/>
+  <text class="n" x="158" y="72.6" text-anchor="middle">电池 103 × 18 × 10（44 g）</text>
+
+  <!-- 开关 -->
+  <rect x="125" y="137.2" width="10.4" height="15.2" fill="#fdf3d8" stroke="#111" stroke-width=".5"/>
+  <text class="n" x="130.2" y="155" text-anchor="middle">开关</text>
+
+  <!-- 后驱电机 -->
+  <rect x="81.8" y="58.8" width="25.6" height="9.6" fill="#dff0e2" stroke="#111" stroke-width=".45"/>
+  <rect x="81.8" y="142" width="25.6" height="9.6" fill="#dff0e2" stroke="#111" stroke-width=".45"/>
+  <text class="n" x="94.6" y="65.6" text-anchor="middle">后驱电机</text>
+  <text class="n" x="94.6" y="149" text-anchor="middle">后驱电机</text>
+
+  <!-- 舵机 -->
+  <rect x="195.4" y="100.4" width="18.4" height="9.6" fill="#f7dde2" stroke="#111" stroke-width=".5"/>
+  <text class="n" x="204.6" y="107" text-anchor="middle">舵机</text>
+
+  <!-- 转向节 -->
+  <rect x="197" y="56.4" width="18.4" height="17.6" fill="#f0f0f0" stroke="#111" stroke-width=".45" stroke-dasharray="2 1"/>
+  <rect x="197" y="138" width="18.4" height="16.8" fill="#f0f0f0" stroke="#111" stroke-width=".45" stroke-dasharray="2 1"/>
+  <text class="n" x="206" y="67" text-anchor="middle">转向节</text>
+  <text class="n" x="206" y="149" text-anchor="middle">转向节</text>
+
+  <!-- ToF -->
+  <rect x="217.8" y="98" width="10.4" height="14.4" fill="#e6f5f0" stroke="#111" stroke-width=".5"/>
+  <text class="n" x="223" y="106" text-anchor="middle" transform="rotate(-90 223 106)">ToF</text>
+
+  <!-- 重心 -->
+  <circle cx="140" cy="110" r="2.6" fill="none" stroke="#cc0000" stroke-width=".5"/>
+  <line x1="140" y1="107.4" x2="140" y2="102" stroke="#cc0000" stroke-width=".3"/>
+  <text class="n" x="140" y="100" text-anchor="middle" fill="#cc0000">重心（估）</text>
+
+  <!-- 轴距 -->
+  <line x1="65" y1="22" x2="65" y2="36" class="e"/>
+  <line x1="209" y1="22" x2="209" y2="36" class="e"/>
+  <line x1="65" y1="26" x2="209" y2="26" class="s"/>
+  <line x1="65" y1="24" x2="65" y2="28" class="s"/>
+  <line x1="209" y1="24" x2="209" y2="28" class="s"/>
+  <text class="d" x="137" y="24.6" text-anchor="middle">轴距 180</text>
+
+  <!-- 底板长 -->
+  <line x1="45" y1="57.2" x2="45" y2="182" class="e"/>
+  <line x1="229" y1="57.2" x2="229" y2="182" class="e"/>
+  <line x1="45" y1="178" x2="229" y2="178" class="s"/>
+  <line x1="45" y1="176" x2="45" y2="180" class="s"/>
+  <line x1="229" y1="176" x2="229" y2="180" class="s"/>
+  <text class="d" x="137" y="176.6" text-anchor="middle">底板 230</text>
+
+  <!-- 整车总长 -->
+  <line x1="21" y1="57.2" x2="21" y2="192" class="e"/>
+  <line x1="229" y1="57.2" x2="229" y2="192" class="e"/>
+  <line x1="21" y1="188" x2="229" y2="188" class="s"/>
+  <line x1="21" y1="186" x2="21" y2="190" class="s"/>
+  <line x1="229" y1="186" x2="229" y2="190" class="s"/>
+  <text class="d" x="125" y="186.6" text-anchor="middle">整车总长 ≈ 245（含天线外伸）</text>
+
+  <!-- 轮距 -->
+  <line x1="240" y1="49.2" x2="253" y2="49.2" class="e"/>
+  <line x1="240" y1="161.2" x2="253" y2="161.2" class="e"/>
+  <line x1="249" y1="49.2" x2="249" y2="161.2" class="s"/>
+  <line x1="247" y1="49.2" x2="251" y2="49.2" class="s"/>
+  <line x1="247" y1="161.2" x2="251" y2="161.2" class="s"/>
+  <text class="d" x="254" y="105" text-anchor="middle" transform="rotate(-90 254 105)">轮距 140</text>
+
+  <!-- 底板宽（放右侧，避开天线净空区） -->
+  <line x1="240" y1="57.2" x2="271" y2="57.2" class="e"/>
+  <line x1="240" y1="153.2" x2="271" y2="153.2" class="e"/>
+  <line x1="268" y1="57.2" x2="268" y2="153.2" class="s"/>
+  <line x1="266" y1="57.2" x2="270" y2="57.2" class="s"/>
+  <line x1="266" y1="153.2" x2="270" y2="153.2" class="s"/>
+  <text class="d" x="273" y="105" text-anchor="middle" transform="rotate(-90 273 105)">120</text>
+
+  <!-- 说明 -->
+  <rect x="10" y="194" width="277" height="14" fill="none" stroke="#111" stroke-width=".3"/>
+  <text class="n" x="14" y="198.4">① 轴距 180、轮距 140 → 车宽 183，400 mm 车道宽裕；电源/信号线建议沿右侧长边走向，用扎带固定</text>
+  <text class="n" x="14" y="202.6">② ⚠️「后轮内缘伸入底板 11.5 mm」与「角铝贴板边（宽 10 mm）」【会干涉】。解决：角铝内移 15–20 mm（抗弯刚度几乎不变），或轮距加宽到 163 mm</text>
+  <text class="n" x="14" y="206.8">③ ⚠️ 托盘天线端必须伸出铝板后缘 ≥15 mm（图中已示）；USB 端朝前，前方留 ≥20 mm；开关建议 3D 打印卡座，避免铝板开 13×19 方孔</text>
+</svg>

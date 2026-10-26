@@ -1,3 +1,12 @@
+> **状态：⚠️ 部分过期** ｜ 2026-10-26更新：下文2026-10-23主程序/命令为历史赛车版本，当前Flash为A20 v2。
+
+当前请在Arduino IDE打开 [ground_sequence.ino](../tools/chassis/ground_sequence/ground_sequence.ino)，同目录保留sequence.h；ESP32 Dev Module/core3.3.12，无额外库。烧录前断电池和D057，仅USB，端口以实际枚举选择。串口115200+换行：START/START1=每段1秒，START3=每段3秒，STATUS查询，0/x/!中止锁停。上电不动。完整操作/接线见[当前说明](../tools/chassis/ground_sequence/README.md)，[检查证据](../data/2026-10-26/A20/README.md)。
+
+[car_steering v5](../tools/servo/car_steering/README.md)是另行烧录的五档单测工具，1/2/3命令只属于该工具。下面BENCH/JOG等只属于旧track_racer；各固件命令不可混用。
+
+---
+## 2026-10-23赛车固件历史说明
+
 > 状态：现行交付快照｜2026-10-23｜未完成整车标定
 
 # 编译、烧录与人工测试

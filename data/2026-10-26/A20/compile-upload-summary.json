@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-10-26T21:02:32.164933+08:00",
+  "firmware": "A20 v2.0 fast steering, START1/START3",
+  "core": "3.3.12",
+  "program_bytes": 288491,
+  "static_ram_bytes": 23144,
+  "compile_exit": 0,
+  "upload_exit": 0,
+  "flash_verified_images": 4,
+  "sources": [
+    {
+      "file": "ground_sequence.ino",
+      "source": "tools/chassis/ground_sequence/ground_sequence.ino",
+      "sha256": "F4926902CA0E2B09086509F67A914A0E55FBEE109D81BF5B4A4153469260A0CD"
+    },
+    {
+      "file": "sequence.h",
+      "source": "tools/chassis/ground_sequence/sequence.h",
+      "sha256": "EAB5E783FB68470A204CB1228E577E31819C1ADD8F1439864887C2615E57F0AA"
+    }
+  ],
+  "power_during_checks": "user confirmed battery removed, D057 insulated, USB only; B wiring may remain attached",
+  "final_state": "IDLE, all motor outputs LOW, servo PWM OFF"
+}

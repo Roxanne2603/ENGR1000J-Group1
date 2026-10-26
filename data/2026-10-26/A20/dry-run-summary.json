@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-26T20:58:34.3178789+08:00",
+  "port": "COM5",
+  "preliminary_pass": true,
+  "failure": null,
+  "tests": [
+    {
+      "test": "full-1s",
+      "preliminary_pass": true,
+      "elapsed_ms": 18809,
+      "commands": [
+        "STATUS",
+        "START",
+        "START3 (busy duplicate)",
+        "STATUS"
+      ],
+      "log": "dry-full-1s.log"
+    },
+    {
+      "test": "full-3s",
+      "preliminary_pass": true,
+      "elapsed_ms": 24795,
+      "commands": [
+        "STATUS",
+        "START3",
+        "START1 (busy duplicate)",
+        "STATUS"
+      ],
+      "log": "dry-full-3s.log"
+    },
+    {
+      "test": "abort-countdown",
+      "preliminary_pass": true,
+      "elapsed_ms": 4801,
+      "commands": [
+        "STATUS",
+        "START3",
+        "!",
+        "START (after stop)",
+        "STATUS"
+      ],
+      "log": "dry-abort-countdown.log"
+    },
+    {
+      "test": "abort-drive",
+      "preliminary_pass": true,
+      "elapsed_ms": 7838,
+      "commands": [
+        "STATUS",
+        "START1",
+        "!",
+        "START (after stop)",
+        "STATUS"
+      ],
+      "log": "dry-abort-drive.log"
+    },
+    {
+      "test": "abort-steer",
+      "preliminary_pass": true,
+      "elapsed_ms": 10828,
+      "commands": [
+        "STATUS",
+        "START",
+        "!",
+        "START (after stop)",
+        "STATUS"
+      ],
+      "log": "dry-abort-steer.log"
+    }
+  ],
+  "power": "user confirmed battery/D057/B actuator power disconnected; USB only",
+  "scope": "PWM commands exercised without external actuator power; no physical motion acceptance"
+}

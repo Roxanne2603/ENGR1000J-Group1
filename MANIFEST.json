@@ -1,12 +1,9 @@
 {
-  "prepared_at": "2026-10-23T16:42:03.124646+08:00",
+  "prepared_at": "2026-10-26T21:28:59.962829+08:00",
   "repository": "Roxanne2603/ENGR1000J-Group1",
-  "branch": "main",
-  "preserved_parent": "c1446cefe20b5ed8ff6aab63139f8be683997542",
+  "branch": "codex/a20-ground-sequence-v2",
+  "preserved_parent": "37c877d62927f63ff09acb667ed73f186b94de37",
   "source_code_bytes_unchanged": true,
-  "relative_links": "passed",
-  "forbidden_artifacts": "none",
-  "credential_pattern_scan": "passed",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,10 +21,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 2144,
-      "sha256": "55a3b44320ec54a35a10b1a6c8a92726391c136c15b804edb605ccf4a2ce2fe2",
-      "source": null,
-      "role": "documentation"
+      "bytes": 2057,
+      "sha256": "9799acb39b938c826eff12593ea9951de8ab5247faa4168635bab71321a7aa82",
+      "source": null
     },
     {
       "path": "data/2026-10-23/calibration.json",
@@ -156,11 +152,88 @@
       "role": "sanitized-verification"
     },
     {
+      "path": "data/2026-10-26/A20/README.md",
+      "bytes": 2467,
+      "sha256": "284c967d5f7b1c87c6244addb123927c7ee103d243907b7bcddd5091d1e81832",
+      "source": null
+    },
+    {
+      "path": "data/2026-10-26/A20/analyze_checks.py",
+      "bytes": 4607,
+      "sha256": "74177853e1d4958a9dae2598efb6bf48cd83d549e94ee6466fee917c5770080a",
+      "source": "outputs/A20-20261026-fast-v2/analyze_checks.py"
+    },
+    {
+      "path": "data/2026-10-26/A20/compile-upload-summary.json",
+      "bytes": 841,
+      "sha256": "eb8f36fdfecdbf217cfa0709cdbc62adce8a9cf7acc42d53dee81a847ad2a6b6",
+      "source": null
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-countdown.log",
+      "bytes": 3804,
+      "sha256": "42804d4637688cc204703611aff0b03a6be77df7ac70eeab38ab6880b00102c5",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-countdown.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-drive.log",
+      "bytes": 5263,
+      "sha256": "fb741c48e8af35fd674586585dffb77f023dc206b9b6bfc9485005056e0ea15e",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-drive.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-steer.log",
+      "bytes": 6875,
+      "sha256": "d5a2c6d2fc9bc4ca754fa25289d96298adac74ec33b02cba77b6cc839942a2ca",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-steer.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-full-1s.log",
+      "bytes": 11062,
+      "sha256": "c1839571b39e73301f545cba5b1ac8bce90aea57ede05046b294660cddff1d64",
+      "source": "outputs/A20-20261026-fast-v2/dry-full-1s.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-full-3s.log",
+      "bytes": 13894,
+      "sha256": "74de76c23a60ba2f6b91c449bc24fe3ab15a9397374061fa861499883fd4e030",
+      "source": "outputs/A20-20261026-fast-v2/dry-full-3s.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-run-summary.json",
+      "bytes": 1670,
+      "sha256": "759117454d6327f540ec5987344c6281f605da7d86eb5e6c9f15a4e88fb3f8d9",
+      "source": "outputs/A20-20261026-fast-v2/dry-run-summary.json"
+    },
+    {
+      "path": "data/2026-10-26/A20/observations.json",
+      "bytes": 1049,
+      "sha256": "4103adcaa60bb27d13bfa2cd5927d9fa985008dc2ff0f2f243f2d7feb240ebcd",
+      "source": null
+    },
+    {
+      "path": "data/2026-10-26/A20/software-checks.json",
+      "bytes": 3014,
+      "sha256": "8e40b86c933b0384ff3410652b22ec1d51ad600043656dd15cf0bf2bc207e470",
+      "source": "outputs/A20-20261026-fast-v2/software-checks.json"
+    },
+    {
+      "path": "data/2026-10-26/A20/startup-final-idle.log",
+      "bytes": 1466,
+      "sha256": "e5cb12e77266d40740a2856fd066eff91bfb21201d7c3c6cacad5d4183945583",
+      "source": "outputs/A20-20261026-fast-v2/startup-final-idle.log"
+    },
+    {
+      "path": "data/2026-10-26/A20/verification.json",
+      "bytes": 5047,
+      "sha256": "b8c93bbb50dc79459cb406282ec3c2575638e0b768ffc4472dead4fe70868eac",
+      "source": null
+    },
+    {
       "path": "data/README.md",
-      "bytes": 1865,
-      "sha256": "ff6c0dec7b2ba67501c922a02a93d7f8080f5daea52b67941b1fe1aca8017bf1",
-      "source": null,
-      "role": "documentation"
+      "bytes": 2105,
+      "sha256": "c3a0f804cdb700ed6da8667e95e70f50964a1dfed2b53a6a0c1a12a3eac96a98",
+      "source": null
     },
     {
       "path": "data/software-tests/historical-controller-tests-20261022.log",
@@ -199,31 +272,27 @@
     },
     {
       "path": "docs/FIRMWARE.md",
-      "bytes": 2599,
-      "sha256": "917240c4879e341e8ce0cefd6dce75ad31d108c7a8a51e1267146fab658435d7",
-      "source": null,
-      "role": "documentation"
+      "bytes": 3486,
+      "sha256": "3f9a3ad6e7a8a0dc6fbb3ad28fb75e25686c4e71c09ff5a8e50ed4293fbd7fac",
+      "source": null
     },
     {
       "path": "docs/PROVENANCE.md",
-      "bytes": 1527,
-      "sha256": "163d43c54e40fdeadb3c990dde52a2a0d4c670159f6b997cc9804e9da09d2530",
-      "source": null,
-      "role": "documentation"
+      "bytes": 2189,
+      "sha256": "6625f2910bdfcf0ccc605d2cb36701915ff067addff5e01a45107b061c25fddf",
+      "source": null
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 1850,
-      "sha256": "e1adf7bcaec2d8dcf76789ef25ff8b22bfd10687cff0e005ef474b80879a0e7f",
-      "source": null,
-      "role": "documentation"
+      "bytes": 2790,
+      "sha256": "2149e54de821d603dca9f5e8120a54f6cabd5155c3e8be262ef206550c862101",
+      "source": null
     },
     {
       "path": "docs/WIRING.md",
-      "bytes": 2724,
-      "sha256": "e5e4ae78d5980131cc1e4b83e26ed9aab7f9067960be8bf63a76d4472b46e56d",
-      "source": null,
-      "role": "documentation"
+      "bytes": 3263,
+      "sha256": "cf8605e85acf7aed4d10f6f3b74a0c8d2e203488a6dcc0f85fc35f645b07cb58",
+      "source": null
     },
     {
       "path": "hardware/README.md",
@@ -262,10 +331,27 @@
     },
     {
       "path": "tools/README.md",
-      "bytes": 941,
-      "sha256": "aa1301c1d60d12b94c896c8328295ba8b3d1c9c31567e98e46d50b97510de2a1",
-      "source": null,
-      "role": "documentation"
+      "bytes": 1181,
+      "sha256": "df8be59e4bc2638850154c3b47bb61522e8c4d1b5f821e50cd50e38a348a61c1",
+      "source": null
+    },
+    {
+      "path": "tools/chassis/ground_sequence/README.md",
+      "bytes": 3659,
+      "sha256": "cf2790a1004b209a7c212f651e768a3bcd941ad65a5a586d15a3aaec91145bb9",
+      "source": null
+    },
+    {
+      "path": "tools/chassis/ground_sequence/ground_sequence.ino",
+      "bytes": 14493,
+      "sha256": "f4926902ca0e2b09086509f67a914a0e55fbee109d81bf5b4a4153469260a0cd",
+      "source": "tools/chassis/ground_sequence/ground_sequence.ino"
+    },
+    {
+      "path": "tools/chassis/ground_sequence/sequence.h",
+      "bytes": 1469,
+      "sha256": "eab5e783fb68470a204cb1228e577e31819c1add8f1439864887c2615e57f0aa",
+      "source": "tools/chassis/ground_sequence/sequence.h"
     },
     {
       "path": "tools/chassis/power_on_test/README.md",
@@ -290,10 +376,9 @@
     },
     {
       "path": "tools/chassis/track_racer/README.md",
-      "bytes": 928,
-      "sha256": "4aa4dd3c67a08d34301c9db9908d3423a0529b0f81573a8f82ff30eabdb72fd5",
-      "source": null,
-      "role": "documentation"
+      "bytes": 1180,
+      "sha256": "bedd50912e8e078b3ba28463b0bc21535a79df001bd05a21195479baa2d1e433",
+      "source": null
     },
     {
       "path": "tools/chassis/track_racer/analyze_log.py",
@@ -374,10 +459,21 @@
     },
     {
       "path": "tools/servo/README.md",
-      "bytes": 783,
-      "sha256": "72cadb1bf21a8b390e00bf7f82fdc033ad3a47920926f7214317b589c03b1af5",
-      "source": null,
-      "role": "documentation"
+      "bytes": 1029,
+      "sha256": "5d12f6abc2a31add745e49143a486b2a957c8fdc5fc807aa07448d66f1b32c84",
+      "source": null
+    },
+    {
+      "path": "tools/servo/car_steering/README.md",
+      "bytes": 2926,
+      "sha256": "4c811489d2406465d9b4e0d9e47b1a26b7c0a58e5adb9f9bd2730a6704e496f2",
+      "source": null
+    },
+    {
+      "path": "tools/servo/car_steering/car_steering.ino",
+      "bytes": 6178,
+      "sha256": "9e82b1222257988f04db0c76d15582a88a6179b9387a559ba9ca1dc7c16a369a",
+      "source": "tools/servo/car_steering/car_steering.ino"
     },
     {
       "path": "tools/servo/step1_servo/step1_servo.ino",
@@ -442,5 +538,7 @@
       "source": "tools/vl53l0x/uno_test/uno_test.ino",
       "role": "source"
     }
-  ]
+  ],
+  "excludes_self_hash": true,
+  "validation_scope": "Source byte checks, relative links, forbidden artifacts, credential patterns; disconnected-power serial software evidence only"
 }

@@ -1,0 +1,66 @@
+A22 v2.13 CONTINUOUS TRACK RACE - RIGHT WALL ONLY START - AUTO ONCE 10+1+3s
+HISTORY_BEGIN,latest=23
+HISTORY,seq=16,ms=16014,reset=1,origin=3,reason=STALL_OR_ENCODER,F=248,L=503,R=331,valid=7,age=130/167/76,open_start=0,servo=2055,turn=-1,flags=21
+HISTORY,seq=17,ms=25875,reset=1,origin=3,reason=STALL_OR_ENCODER,F=914,L=193,R=310,valid=7,age=99/136/45,open_start=0,servo=1735,turn=-1,flags=17
+HISTORY,seq=18,ms=30195,reset=1,origin=3,reason=FRONT_EARLY_BRAKE,F=76,L=1028,R=177,valid=7,age=62/99/190,open_start=0,servo=1203,turn=1,flags=25
+HISTORY,seq=19,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=74,L=449,R=191,valid=7,age=90/127/36,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=20,ms=11307,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=73,L=397,R=178,valid=7,age=91/128/37,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=21,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=78,L=439,R=238,valid=7,age=88/125/216,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=22,ms=26577,reset=1,origin=3,reason=STALL_OR_ENCODER,F=100,L=188,R=336,valid=7,age=106/52/143,open_start=0,servo=2095,turn=-1,flags=25
+HISTORY,seq=23,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=57,L=516,R=271,valid=7,age=90/127/36,open_start=0,servo=1375,turn=0,flags=1
+HISTORY_END (power source unknown; user sequence supplies context)
+  VL53L0X_SENSE_LONG_RANGE
+INIT_OK,FRONT,xsh=4,address=0x30,budget_requested_us=50000
+  VL53L0X_SENSE_LONG_RANGE
+INIT_OK,LEFT,xsh=13,address=0x31,budget_requested_us=33000
+  VL53L0X_SENSE_LONG_RANGE
+INIT_OK,RIGHT,xsh=17,address=0x32,budget_requested_us=33000
+INIT_SUMMARY,FRONT=OK,LEFT=OK,RIGHT=OK
+DATA,end_ms,sensor,start_ms,elapsed_ms,raw_mm,api_error,range_status,valid
+RangeStatus/API/I2C validity retained; no range certification claim.
+COUNTERS_CLEARED,1285
+SENSOR_CONFIG,0,budget_us=50636,signal_mcps=0.09375,sigma_mm=60.0,range_ignore=0,signal_check=1,sigma_check=1
+SENSOR_CONFIG,1,budget_us=33553,signal_mcps=0.09375,sigma_mm=60.0,range_ignore=0,signal_check=1,sigma_check=1
+SENSOR_CONFIG,2,budget_us=33553,signal_mcps=0.09375,sigma_mm=60.0,range_ignore=0,signal_check=1,sigma_check=1
+BUS_INIT_OK,attempt=1
+STATUS A22v2.13 stage=WAIT10 reason=NONE duty=0/0 servo_us=0 raw=0/0/0/0 lease=0 transport=0 degraded=0 open_start=1 reset=1
+RANGE,0,last_raw=0,last_good=0,valid=0,seen=0,age_ms=1296,closing=0.0
+RANGE,1,last_raw=0,last_good=0,valid=0,seen=0,age_ms=1296,closing=0.0
+RANGE,2,last_raw=0,last_good=0,valid=0,seen=0,age_ms=1296,closing=0.0
+CONFIG side_aim=130 side_soft=100 side_hard=50 front_soft=50 front_hard=30 early_stop_F80/S65 center=1375 left=575 right=2175; cruise=0.20mps duty_max=70 run_max=180s; no finish-line detection
+RACE,1298,WAIT10,0,0,0,1375,0,0,0.000,0.000,0.000,0.000,0,0
+RACE,1398,WAIT10,56,526,0,1375,0,0,0.000,0.000,0.000,0.000,0,3
+RACE,1498,WAIT10,55,526,256,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,1598,WAIT10,56,504,256,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,1698,WAIT10,54,504,269,1375,0,0,0.000,0.000,0.000,0.000,0,7
+START_OPENING_EXIT,left_wall_reacquired
+RACE,1798,WAIT10,58,556,269,1375,0,0,0.000,0.000,0.000,0.000,0,7
+STATUS A22v2.13 stage=WAIT10 reason=NONE duty=0/0 servo_us=0 raw=0/0/0/0 lease=0 transport=0 degraded=0 open_start=0 reset=1
+RANGE,0,last_raw=53,last_good=53,valid=1,seen=1,age_ms=54,closing=15.7
+RANGE,1,last_raw=556,last_good=556,valid=1,seen=1,age_ms=182,closing=-98.7
+RANGE,2,last_raw=265,last_good=265,valid=1,seen=1,age_ms=91,closing=-7.8
+CONFIG side_aim=130 side_soft=100 side_hard=50 front_soft=50 front_hard=30 early_stop_F80/S65 center=1375 left=575 right=2175; cruise=0.20mps duty_max=70 run_max=180s; no finish-line detection
+RACE,1899,WAIT10,53,556,265,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,1999,WAIT10,59,503,265,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2099,WAIT10,57,503,263,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2199,WAIT10,58,502,263,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2300,WAIT10,55,505,260,1375,0,0,0.000,0.000,0.000,0.000,0,7
+HISTORY_BEGIN,latest=23
+HISTORY,seq=16,ms=16014,reset=1,origin=3,reason=STALL_OR_ENCODER,F=248,L=503,R=331,valid=7,age=130/167/76,open_start=0,servo=2055,turn=-1,flags=21
+HISTORY,seq=17,ms=25875,reset=1,origin=3,reason=STALL_OR_ENCODER,F=914,L=193,R=310,valid=7,age=99/136/45,open_start=0,servo=1735,turn=-1,flags=17
+HISTORY,seq=18,ms=30195,reset=1,origin=3,reason=FRONT_EARLY_BRAKE,F=76,L=1028,R=177,valid=7,age=62/99/190,open_start=0,servo=1203,turn=1,flags=25
+HISTORY,seq=19,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=74,L=449,R=191,valid=7,age=90/127/36,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=20,ms=11307,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=73,L=397,R=178,valid=7,age=91/128/37,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=21,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=78,L=439,R=238,valid=7,age=88/125/216,open_start=0,servo=1375,turn=0,flags=1
+HISTORY,seq=22,ms=26577,reset=1,origin=3,reason=STALL_OR_ENCODER,F=100,L=188,R=336,valid=7,age=106/52/143,open_start=0,servo=2095,turn=-1,flags=25
+HISTORY,seq=23,ms=11306,reset=1,origin=0,reason=START_RANGES_NOT_READY,F=57,L=516,R=271,valid=7,age=90/127/36,open_start=0,servo=1375,turn=0,flags=1
+HISTORY_END (power source unknown; user sequence supplies context)
+RACE,2400,WAIT10,57,505,258,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2500,WAIT10,55,505,258,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2600,WAIT10,56,505,261,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2700,WAIT10,55,517,261,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2800,WAIT10,57,517,267,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,2900,WAIT10,58,573,267,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,3000,WAIT10,57,573,268,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,3100,WAIT10,55,471,268,1375,0,0,0.000,0.000,0.000,0.000,0,7
+RACE,3200,WAIT10,57,471,262,1375,0,0,0.000,0.000,0.000,0.000,0,7

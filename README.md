@@ -1,24 +1,28 @@
 # ENGR1000J-Group1
 
-DeepSeeker · ENGR1000J机器人赛车项目。
+DeepSeeker · ENGR1000J 机器人赛车项目。
 
-当前交付更新至 **2026-10-26**。最近烧录的是 [A20 v2手动顺序试车程序](tools/chassis/ground_sequence/README.md)：直行→左弧→右弧，快速转舵，1秒/3秒档，正常运行前后回中。上电待机，必须显式START。**尚未完成地面/自主赛道验收，无自动避障。**
+当前交付更新至 **2026-10-28**。最近烧录的是 [A22 track_race_v2 v2.14](tools/chassis/track_race_v2/README.md)：三路 ToF + 编码器闭环的连续赛道试跑程序，自动「10 秒准备 + 1 秒回中 + 3 秒倒计时」运行一次，最长 180 秒。**首个圆岛右弯仍未稳定通过，不能当作完成整圈或可比赛版本。**
 
 | 内容 | 入口 |
 |---|---|
-| 当前试车程序、接线和操作 | [ground_sequence](tools/chassis/ground_sequence/README.md) |
-| 断动力软件检查与待测数据 | [A20验证记录](data/2026-10-26/A20/README.md) |
-| 前轮五档单测工具（需另行烧录） | [car_steering v5](tools/servo/car_steering/README.md) |
-| 已有证据与待测状态 | [STATUS](docs/STATUS.md) |
-| 编译/烧录及各固件命令边界 | [FIRMWARE](docs/FIRMWARE.md) |
-| 当前实车接线 | [WIRING](docs/WIRING.md) |
-| 编码器/轮径初值与历史测距 | [CALIBRATION](docs/CALIBRATION.md) |
-| 历史工具 / 测量数据 | [工具](tools/README.md) / [数据](data/README.md) |
-| CAD及旧接线表适用边界 | [硬件参考](hardware/README.md) |
-| AI披露 / 文件哈希 | [PROVENANCE](docs/PROVENANCE.md) / [MANIFEST](MANIFEST.json) |
+| 当前 A22 程序、参数和操作 | [track_race_v2](tools/chassis/track_race_v2/README.md) |
+| A22 当前验证/现场记录 | [data/2026-10-28/A22](data/2026-10-28/A22/README.md) |
+| 三路固定距离与量程档 | [传感器数据](data/2026-10-28/sensor-distances/README.md) / [量程档](data/2026-10-28/range-profiles/README.md) |
+| 当前状态、已验证/待测 | [STATUS](docs/STATUS.md) |
+| 编译、烧录、串口命令 | [FIRMWARE](docs/FIRMWARE.md) |
+| 实车接线 | [WIRING](docs/WIRING.md) |
+| 编码器/轮径/测距初值 | [CALIBRATION](docs/CALIBRATION.md) |
+| A20 v2 手动顺序试车（另行烧录的工具） | [ground_sequence](tools/chassis/ground_sequence/README.md) |
+| 前轮五档单测（另行烧录） | [car_steering v5](tools/servo/car_steering/README.md) |
+| 历史赛车程序/工具/数据 | [tools](tools/README.md) / [data](data/README.md) |
+| CAD/旧接线表边界 | [硬件参考](hardware/README.md) |
+| AI 披露/文件哈希 | [PROVENANCE](docs/PROVENANCE.md) / [MANIFEST](MANIFEST.json) |
 
-ESP32-WROOM-32E、Arduino-ESP32 **3.3.12**；A20无需额外ToF或舵机库。START/START1每段1秒（三段累计3秒驱动指令），START3每段3秒（累计9秒）。115200、换行。USB供主控时D057外部5V必须断开绝缘；改线/烧录先断动力电池。
+ESP32-WROOM-32E、Arduino-ESP32 **3.3.12**。A22 自带修改过的 Adafruit VL53L0X 1.2.5 驱动；A20 不需要 ToF/舵机额外库。**电脑 USB 与 D057 外部 5V 互斥**：烧录/看日志时拔电池、断开并绝缘 D057、仅 USB；上动力前先拔 USB、接 D057/电池。
 
-此前[自主循墙赛车源码](tools/chassis/track_racer/track_racer.ino)及2026-10-23参数保留，COMMISSIONED=false；不能用其命令控制A20。电机/编码器符号+1/-1、CPR初值824.2/825.7、三圈650mm对应有效轮径约68.97mm，均待带载复核。
+A22 当前：349755 B 程序、27640 B 静态 RAM、COM4/115200 四段写入校验通过；仅 USB 上电路径和编译期断言通过。**首个圆岛右弯、整圈、带载速度/制动、R400/R850 扫掠、真实轮角/回中和比赛可靠性均未验收。** `COMMISSIONED=false`。
 
-本次五项检查均为断执行器动力的软件验证。用户仅报告上一版v1架空动作正常；新v2实际动作、地面速度/距离、制动、真实轮角/扫掠和整圈仍待测。仓库不含构建镜像、缓存、完整本地工作目录或本机身份信息。
+此前 [A20 v2 手动顺序](tools/chassis/ground_sequence/README.md) 与 [track_racer](tools/chassis/track_racer/README.md) 保留为历史/单独工具；串口命令不可与 A22 混用。电机/编码器符号 +1/−1、CPR 初值 824.2/825.7、三圈 650mm 对应有效轮径约 68.97mm，仍需带载复核。
+
+本仓库只包含允许清单内的源码、文档、设计源件和可公开的小型实测日志；不含编译镜像、缓存、完整本地工作目录、设备 MAC 或本机路径。文件清单与 SHA256 见 [MANIFEST.json](MANIFEST.json)。

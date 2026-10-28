@@ -1,0 +1,52 @@
+{
+  "log": "front50cm-long50-20261028-124621.log",
+  "reference_mm_reported_by_user": 500,
+  "profile": 2,
+  "config": {
+    "budget_requested": "50000",
+    "budget_read": "50636",
+    "signal_limit_mcps": "0.09375",
+    "sigma_limit_mm": "60.00",
+    "signal_check": "1",
+    "sigma_check": "1",
+    "range_ignore_check": "0",
+    "range_ignore_per_spad": "0.000000",
+    "vcsel_pre": "18",
+    "vcsel_final": "14"
+  },
+  "samples": 257,
+  "valid": 257,
+  "invalid": 0,
+  "api_errors": 0,
+  "valid_percent": 100.0,
+  "status_counts": {
+    "0": 257
+  },
+  "mean_mm": 502.92,
+  "min_mm": 493,
+  "max_mm": 514,
+  "stdev_mm": 4.16,
+  "mean_error_mm": 2.92,
+  "elapsed_window_ms": 19968,
+  "max_measurement_ms": 53,
+  "max_start_interval_ms": 78,
+  "signal_mcps_mean": 2.93714,
+  "device_stats": {
+    "enabled": "1",
+    "attempts": "257",
+    "completed": "257",
+    "valid": "257",
+    "invalid": "0",
+    "errors": "0",
+    "min_mm": "493",
+    "max_mm": "514",
+    "last_mm": "514",
+    "mean_mm": "502.9",
+    "max_no_valid_ms": "78"
+  },
+  "events": [],
+  "final_status": [
+    "STATUS STATIC_ONLY profile=2 name=LONG50 running=0 elapsed_ms=0 MOTOR_LOW=1 SERVO_PWM=OFF"
+  ],
+  "vehicle_acceptance": false
+}

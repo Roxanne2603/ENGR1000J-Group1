@@ -1,0 +1,46 @@
+{
+  "log": "front25cm-20261028-121318.log",
+  "reference_front_mm_reported_by_user": 250,
+  "channels": {
+    "LEFT": {
+      "samples": 209,
+      "valid": 86,
+      "invalid": 123,
+      "api_errors": 0,
+      "mean_mm": 94.36,
+      "min_mm": 80,
+      "max_mm": 129,
+      "stdev_mm": 9.56,
+      "elapsed_window_ms": 19968,
+      "max_start_interval_ms": 96
+    },
+    "FRONT": {
+      "samples": 417,
+      "valid": 417,
+      "invalid": 0,
+      "api_errors": 0,
+      "mean_mm": 262.53,
+      "min_mm": 252,
+      "max_mm": 271,
+      "stdev_mm": 3.27,
+      "elapsed_window_ms": 19968,
+      "max_start_interval_ms": 48,
+      "mean_minus_reported_reference_mm": 12.53
+    },
+    "RIGHT": {
+      "samples": 208,
+      "valid": 16,
+      "invalid": 192,
+      "api_errors": 0,
+      "mean_mm": 172.56,
+      "min_mm": 155,
+      "max_mm": 195,
+      "stdev_mm": 11.04,
+      "elapsed_window_ms": 19872,
+      "max_start_interval_ms": 96
+    }
+  },
+  "last_status": "STATUS stage=FAULT reason=START_REFUSED_RANGES_NOT_STABLE duty=0 servo_us=0 raw=0/0/0/0 lease=0 pwm=0 deadline=0",
+  "sensor_error_events": [],
+  "motion_acceptance": false
+}

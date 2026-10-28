@@ -1,0 +1,28 @@
+{
+  "reported_by": "vehicle operator",
+  "center_us": 1375,
+  "center_observation": "基本正中（目视）",
+  "servo_v5_1000_preset_observation": "用户报告没问题；左实际875us，右1000us，非实际轮角量测",
+  "previous_a20_v1": {
+    "recorded_at": "2026-10-26T21:02:32.164933+08:00",
+    "user_text": "架空测试正常，两轮前进和左右转向都没问题",
+    "firmware_at_observation": "previous A20 v1.0, 300ms per leg, slow steering",
+    "interpretation": "basic airborne physical movement sequence reported normal",
+    "ground_run_reported": false,
+    "fast_v2_physical_test_reported": false,
+    "measured_speed_mps": null,
+    "brake_distance_mm": null,
+    "steering_angle_deg": null
+  },
+  "new_v2_powered_motion_test_reported": false,
+  "ground_run_reported": false,
+  "pending": [
+    "地面真实速度与距离",
+    "双轮协调与闭环调参",
+    "制动距离与速度上限",
+    "轮角/回中误差",
+    "转弯半径与扫掠",
+    "三路测距误差与有效性",
+    "自主整圈"
+  ]
+}

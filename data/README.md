@@ -1,6 +1,14 @@
-> 状态：现行交付快照｜2026-10-23｜未完成整车标定
+> **2026-10-28当前入口：** 最近Flash为[A22 v2.14](../tools/chassis/track_race_v2/README.md)。[A22验证/现场](2026-10-28/A22/README.md)、[三路固定距离](2026-10-28/sensor-distances/README.md)、[量程档](2026-10-28/range-profiles/README.md)。下文 A20/2026-10-23 为历史快照，不能据此混用串口命令。
 
 # 数据与验证证据
+
+## 2026-10-28
+
+- [A22 v2.14](2026-10-28/A22/README.md)：349755B/27640B、四段Flash校验、仅USB上电、v2.13两次实车停车（`FRONT_EARLY_BRAKE`/`STALL`）及右弯未通过边界；含[构建摘要](2026-10-28/A22/build-summary.json)、[上电日志](2026-10-28/A22/v214-observation.log)、[v2.13现场历史](2026-10-28/A22/history-v213-20261028-1552.log)。
+- [三路固定距离](2026-10-28/sensor-distances/README.md)：前250、左/右100mm的静态均值/范围/标准差和原始日志；左/右偏差方向不同，不能统一偏置。
+- [前方量程档](2026-10-28/range-profiles/README.md)：DEFAULT20/50在40cm全无效，LONG50在40cm/50cm的有效统计；含50cm原始日志。
+
+## 历史批次
 
 当前批次在2026-10-23目录：
 

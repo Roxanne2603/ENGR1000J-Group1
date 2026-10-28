@@ -1,0 +1,201 @@
+{
+  "verified_at": "2026-10-26T21:02:32.164933+08:00",
+  "firmware": "A20 v2.0 fast steering, START1/START3",
+  "port": "COM5",
+  "sources": [
+    {
+      "file": "ground_sequence.ino",
+      "source": "tools/chassis/ground_sequence/ground_sequence.ino",
+      "sha256": "F4926902CA0E2B09086509F67A914A0E55FBEE109D81BF5B4A4153469260A0CD"
+    },
+    {
+      "file": "sequence.h",
+      "source": "tools/chassis/ground_sequence/sequence.h",
+      "sha256": "EAB5E783FB68470A204CB1228E577E31819C1ADD8F1439864887C2615E57F0AA"
+    }
+  ],
+  "core": "3.3.12",
+  "program_bytes": 288491,
+  "static_ram_bytes": 23144,
+  "compile_exit": 0,
+  "upload_exit": 0,
+  "flash_verified_images": 4,
+  "same_chip": true,
+  "software_checks": {
+    "analyzed_at": "2026-10-26T20:59:38.487151+08:00",
+    "all_passed": true,
+    "tests": [
+      {
+        "test": "full-1s",
+        "passed": true,
+        "drive_ms": 1000,
+        "stage_order": [
+          "PRE_CENTER",
+          "COUNTDOWN",
+          "STRAIGHT",
+          "BRAKE_STRAIGHT",
+          "STEER_LEFT",
+          "LEFT_ARC",
+          "BRAKE_LEFT",
+          "STEER_RIGHT",
+          "RIGHT_ARC",
+          "BRAKE_RIGHT",
+          "RETURN_CENTER",
+          "DONE"
+        ],
+        "drive_apply_intervals": [
+          {
+            "leg": 1,
+            "begin": 5416,
+            "end": 6411,
+            "ms": 995
+          },
+          {
+            "leg": 2,
+            "begin": 9496,
+            "end": 10491,
+            "ms": 995
+          },
+          {
+            "leg": 3,
+            "begin": 14216,
+            "end": 15211,
+            "ms": 995
+          }
+        ],
+        "pre_center_ms": 1000,
+        "left_steer_phase_ms": 1080,
+        "right_steer_phase_ms": 1720,
+        "home_phase_ms": 2080
+      },
+      {
+        "test": "full-3s",
+        "passed": true,
+        "drive_ms": 3000,
+        "stage_order": [
+          "PRE_CENTER",
+          "COUNTDOWN",
+          "STRAIGHT",
+          "BRAKE_STRAIGHT",
+          "STEER_LEFT",
+          "LEFT_ARC",
+          "BRAKE_LEFT",
+          "STEER_RIGHT",
+          "RIGHT_ARC",
+          "BRAKE_RIGHT",
+          "RETURN_CENTER",
+          "DONE"
+        ],
+        "drive_apply_intervals": [
+          {
+            "leg": 1,
+            "begin": 5416,
+            "end": 8411,
+            "ms": 2995
+          },
+          {
+            "leg": 2,
+            "begin": 11496,
+            "end": 14491,
+            "ms": 2995
+          },
+          {
+            "leg": 3,
+            "begin": 18216,
+            "end": 21211,
+            "ms": 2995
+          }
+        ],
+        "pre_center_ms": 1011,
+        "left_steer_phase_ms": 1080,
+        "right_steer_phase_ms": 1720,
+        "home_phase_ms": 2080
+      },
+      {
+        "test": "abort-countdown",
+        "passed": true,
+        "drive_ms": 3000,
+        "stage_order": [
+          "PRE_CENTER",
+          "COUNTDOWN"
+        ],
+        "drive_apply_intervals": []
+      },
+      {
+        "test": "abort-drive",
+        "passed": true,
+        "drive_ms": 1000,
+        "stage_order": [
+          "PRE_CENTER",
+          "COUNTDOWN",
+          "STRAIGHT"
+        ],
+        "drive_apply_intervals": [
+          {
+            "leg": 1,
+            "begin": 5416,
+            "end": 5431,
+            "ms": 15
+          }
+        ]
+      },
+      {
+        "test": "abort-steer",
+        "passed": true,
+        "drive_ms": 1000,
+        "stage_order": [
+          "PRE_CENTER",
+          "COUNTDOWN",
+          "STRAIGHT",
+          "BRAKE_STRAIGHT",
+          "STEER_LEFT"
+        ],
+        "drive_apply_intervals": [
+          {
+            "leg": 1,
+            "begin": 5416,
+            "end": 6411,
+            "ms": 995
+          }
+        ]
+      }
+    ],
+    "restored_idle_outputs_off": true,
+    "scope": "Disconnected actuator power; software timing and commands only"
+  },
+  "default_drive_ms": 1000,
+  "long_drive_ms": 3000,
+  "observed_1s_drive_apply_ms": [
+    995,
+    995,
+    995
+  ],
+  "observed_3s_drive_apply_ms": [
+    2995,
+    2995,
+    2995
+  ],
+  "center_us": 1375,
+  "left_us": 975,
+  "right_us": 1775,
+  "duty_magnitude": 50,
+  "servo_step_us": 25,
+  "pre_center_hold_ms": 1000,
+  "normal_home_hold_ms": 1500,
+  "power_during_checks": "user confirmed battery removed, D057 insulated, USB only; B wiring may remain attached",
+  "final_state": "IDLE, all motor outputs LOW, servo PWM OFF",
+  "ground_physical_run_performed": false,
+  "v2_powered_physical_motion_test_performed": false,
+  "previous_airborne_user_report": {
+    "recorded_at": "2026-10-26T21:02:32.164933+08:00",
+    "user_text": "架空测试正常，两轮前进和左右转向都没问题",
+    "firmware_at_observation": "previous A20 v1.0, 300ms per leg, slow steering",
+    "interpretation": "basic airborne physical movement sequence reported normal",
+    "ground_run_reported": false,
+    "fast_v2_physical_test_reported": false,
+    "measured_speed_mps": null,
+    "brake_distance_mm": null,
+    "steering_angle_deg": null
+  },
+  "tof_avoidance": false
+}

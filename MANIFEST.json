@@ -1,12 +1,11 @@
 {
-  "prepared_at": "2026-10-23T16:42:03.124646+08:00",
+  "prepared_at": "2026-10-28T16:06:40.373011+08:00",
   "repository": "Roxanne2603/ENGR1000J-Group1",
-  "branch": "main",
-  "preserved_parent": "c1446cefe20b5ed8ff6aab63139f8be683997542",
+  "branch": "codex/a20-ground-sequence-v2",
+  "preserved_parent": "1153b3241a667952c09e6a91b7d0ccaf289872dc",
+  "upstream_base": "37c877d62927f63ff09acb667ed73f186b94de37",
+  "payload": "2026-10-28 A22 track_race_v2 v2.14 + sensor evidence",
   "source_code_bytes_unchanged": true,
-  "relative_links": "passed",
-  "forbidden_artifacts": "none",
-  "credential_pattern_scan": "passed",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,13 +18,6 @@
       "path": ".gitignore",
       "bytes": 374,
       "sha256": "6a746e26b0468dd62273cc5a0aa8527caef3c589f9531a81d5b0cc922c4434c1",
-      "source": null,
-      "role": "documentation"
-    },
-    {
-      "path": "README.md",
-      "bytes": 2144,
-      "sha256": "55a3b44320ec54a35a10b1a6c8a92726391c136c15b804edb605ccf4a2ce2fe2",
       "source": null,
       "role": "documentation"
     },
@@ -156,9 +148,212 @@
       "role": "sanitized-verification"
     },
     {
+      "path": "data/2026-10-26/A20/analyze_checks.py",
+      "bytes": 4607,
+      "sha256": "74177853e1d4958a9dae2598efb6bf48cd83d549e94ee6466fee917c5770080a",
+      "source": "outputs/A20-20261026-fast-v2/analyze_checks.py",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/compile-upload-summary.json",
+      "bytes": 841,
+      "sha256": "eb8f36fdfecdbf217cfa0709cdbc62adce8a9cf7acc42d53dee81a847ad2a6b6",
+      "source": null,
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-countdown.log",
+      "bytes": 3804,
+      "sha256": "42804d4637688cc204703611aff0b03a6be77df7ac70eeab38ab6880b00102c5",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-countdown.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-drive.log",
+      "bytes": 5263,
+      "sha256": "fb741c48e8af35fd674586585dffb77f023dc206b9b6bfc9485005056e0ea15e",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-drive.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-abort-steer.log",
+      "bytes": 6875,
+      "sha256": "d5a2c6d2fc9bc4ca754fa25289d96298adac74ec33b02cba77b6cc839942a2ca",
+      "source": "outputs/A20-20261026-fast-v2/dry-abort-steer.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-full-1s.log",
+      "bytes": 11062,
+      "sha256": "c1839571b39e73301f545cba5b1ac8bce90aea57ede05046b294660cddff1d64",
+      "source": "outputs/A20-20261026-fast-v2/dry-full-1s.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-full-3s.log",
+      "bytes": 13894,
+      "sha256": "74de76c23a60ba2f6b91c449bc24fe3ab15a9397374061fa861499883fd4e030",
+      "source": "outputs/A20-20261026-fast-v2/dry-full-3s.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/dry-run-summary.json",
+      "bytes": 1670,
+      "sha256": "759117454d6327f540ec5987344c6281f605da7d86eb5e6c9f15a4e88fb3f8d9",
+      "source": "outputs/A20-20261026-fast-v2/dry-run-summary.json",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/observations.json",
+      "bytes": 1049,
+      "sha256": "4103adcaa60bb27d13bfa2cd5927d9fa985008dc2ff0f2f243f2d7feb240ebcd",
+      "source": null,
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/README.md",
+      "bytes": 2561,
+      "sha256": "eac61408c9234830f39d38c02bf43ed3241022785e27e1469f5977550cc16059",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "data/2026-10-26/A20/software-checks.json",
+      "bytes": 3014,
+      "sha256": "8e40b86c933b0384ff3410652b22ec1d51ad600043656dd15cf0bf2bc207e470",
+      "source": "outputs/A20-20261026-fast-v2/software-checks.json",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/startup-final-idle.log",
+      "bytes": 1466,
+      "sha256": "e5cb12e77266d40740a2856fd066eff91bfb21201d7c3c6cacad5d4183945583",
+      "source": "outputs/A20-20261026-fast-v2/startup-final-idle.log",
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-26/A20/verification.json",
+      "bytes": 5047,
+      "sha256": "b8c93bbb50dc79459cb406282ec3c2575638e0b768ffc4472dead4fe70868eac",
+      "source": null,
+      "role": ""
+    },
+    {
+      "path": "data/2026-10-28/A22/build-summary.json",
+      "bytes": 1513,
+      "sha256": "96a2cc80d7ac6360c20ce575268c848ed39989594928bce0b971f624a50d8cb9",
+      "source": null,
+      "role": "sanitized-verification"
+    },
+    {
+      "path": "data/2026-10-28/A22/history-v213-20261028-1552.log",
+      "bytes": 5849,
+      "sha256": "cd666a0be62a601f07482f5d7ff6c93a2cdcf080c6c825d7a9e9b08752bd08c2",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/A22/README.md",
+      "bytes": 3198,
+      "sha256": "d5e436a759950812d90c4961ab7394019fd5b06c1ac7a4a86cc6d3a6dd3d5cde",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "data/2026-10-28/A22/v214-observation.log",
+      "bytes": 3333,
+      "sha256": "71afe2e881fb8b4d00b37bf1c3b3dc3ee22762b2f5d4554bd8b5191f47465589",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/range-profiles/front50cm-long50-20261028-124621.log",
+      "bytes": 49545,
+      "sha256": "7b4f292117414d3d9471ae71e2ca5b05561dd0b5cc2f240666d3893aba6b30f9",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/range-profiles/front50cm-long50-20261028-124621.stats.json",
+      "bytes": 1264,
+      "sha256": "b3fe73b8200fb0c78965e99424723a9e41ece471a192b888d0f3e6a9f6bddd30",
+      "source": null,
+      "role": "measurement"
+    },
+    {
+      "path": "data/2026-10-28/range-profiles/README.md",
+      "bytes": 2042,
+      "sha256": "3cf0b448db2ad5e7eb88b989f6fcbb3a168487ab04db6ddb624db528f5d25cbe",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/front25cm-20261028-121318.log",
+      "bytes": 45184,
+      "sha256": "1ae9dc32e30ce4928cdf4682a5c9f2b95c3a8dd48340f586d352d1a9f0091d8f",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/front25cm-20261028-121318.stats.json",
+      "bytes": 1196,
+      "sha256": "35621ef0135455c03c8865a4dc4f18677c91ffa43517b41141785e16b5ac2c50",
+      "source": null,
+      "role": "measurement"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/front40cm-20261028-122723.log",
+      "bytes": 43458,
+      "sha256": "4ea3bcd7038d36a4947e34279baa1fff01834a8adbc203e58dcc6b643575fa0c",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/front40cm-20261028-122723.stats.json",
+      "bytes": 1169,
+      "sha256": "2ab6e69e66f32f368b5787acf28953408c8698d37075aa44e1f9cebbe397a0f7",
+      "source": null,
+      "role": "measurement"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/left10cm-retest-20261028-122320.log",
+      "bytes": 43096,
+      "sha256": "fe7e3fd7f971a64b87d29ee9e40aadef3939c7f07215aa8c029647a40a9df0fe",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/left10cm-retest-20261028-122320.stats.json",
+      "bytes": 1222,
+      "sha256": "442b553090f1b27159fa7bb30fc8034e48e76793315c0484de9e328064f71d79",
+      "source": null,
+      "role": "measurement"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/README.md",
+      "bytes": 1803,
+      "sha256": "f28acef50e21edca7b435b6e06058d5ed940c63db17f7e8a91f88b6a8ac24600",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/right10cm-20261028-122510.log",
+      "bytes": 43488,
+      "sha256": "04c1af58c2a401fc55b26c63cb0f6c721a5aa741e736a8737dc8d8eca030215e",
+      "source": null,
+      "role": "raw-evidence"
+    },
+    {
+      "path": "data/2026-10-28/sensor-distances/right10cm-20261028-122510.stats.json",
+      "bytes": 1217,
+      "sha256": "bbee9c90997da1419a4a13538792e8a11837a3e58e97cb7ac11a929a3896e7f2",
+      "source": null,
+      "role": "measurement"
+    },
+    {
       "path": "data/README.md",
-      "bytes": 1865,
-      "sha256": "ff6c0dec7b2ba67501c922a02a93d7f8080f5daea52b67941b1fe1aca8017bf1",
+      "bytes": 2857,
+      "sha256": "f0ec0c1e292be70d56b1f350450b16f5ff942bb0aafe36b3d69f00fde3e37a3a",
       "source": null,
       "role": "documentation"
     },
@@ -192,36 +387,36 @@
     },
     {
       "path": "docs/CALIBRATION.md",
-      "bytes": 2590,
-      "sha256": "0b27d937b7513dc23304def2b803b4ddeaf2f59b97f1240f497434e28d353c8c",
+      "bytes": 3629,
+      "sha256": "e1433ec37f0107fe85a4129c4d6df46a69e1faa9de724366016bb0b50de3d5ef",
       "source": null,
       "role": "documentation"
     },
     {
       "path": "docs/FIRMWARE.md",
-      "bytes": 2599,
-      "sha256": "917240c4879e341e8ce0cefd6dce75ad31d108c7a8a51e1267146fab658435d7",
+      "bytes": 3256,
+      "sha256": "014fda4d5d1fe6c67bc338fd86470ee47009dc732782ad287227aacd4ad78d55",
       "source": null,
       "role": "documentation"
     },
     {
       "path": "docs/PROVENANCE.md",
-      "bytes": 1527,
-      "sha256": "163d43c54e40fdeadb3c990dde52a2a0d4c670159f6b997cc9804e9da09d2530",
+      "bytes": 3212,
+      "sha256": "9ecccf3b50940cf8a315e294566a83aff591f8c5062aab4affa15005d2f15c68",
       "source": null,
       "role": "documentation"
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 1850,
-      "sha256": "e1adf7bcaec2d8dcf76789ef25ff8b22bfd10687cff0e005ef474b80879a0e7f",
+      "bytes": 4179,
+      "sha256": "b1298de68d24b9e97c212003855206289eaf5c44b9d67765f51401847f9a5ce8",
       "source": null,
       "role": "documentation"
     },
     {
       "path": "docs/WIRING.md",
-      "bytes": 2724,
-      "sha256": "e5e4ae78d5980131cc1e4b83e26ed9aab7f9067960be8bf63a76d4472b46e56d",
+      "bytes": 3263,
+      "sha256": "cf8605e85acf7aed4d10f6f3b74a0c8d2e203488a6dcc0f85fc35f645b07cb58",
       "source": null,
       "role": "documentation"
     },
@@ -261,18 +456,32 @@
       "role": "historical-wiring"
     },
     {
-      "path": "tools/README.md",
-      "bytes": 941,
-      "sha256": "aa1301c1d60d12b94c896c8328295ba8b3d1c9c31567e98e46d50b97510de2a1",
+      "path": "README.md",
+      "bytes": 2649,
+      "sha256": "91b767d52ce0a81d99708ea054bf962c6285375e0b5a8de921a41079b7017431",
       "source": null,
       "role": "documentation"
     },
     {
-      "path": "tools/chassis/power_on_test/README.md",
-      "bytes": 640,
-      "sha256": "7017f9cd2e9f0f63e10703640e1a4db6a536e6e5662697e797c3c2a68616d501",
+      "path": "tools/chassis/ground_sequence/ground_sequence.ino",
+      "bytes": 14493,
+      "sha256": "f4926902ca0e2b09086509f67a914a0e55fbee109d81bf5b4a4153469260a0cd",
+      "source": "tools/chassis/ground_sequence/ground_sequence.ino",
+      "role": ""
+    },
+    {
+      "path": "tools/chassis/ground_sequence/README.md",
+      "bytes": 3811,
+      "sha256": "921bf87c41d972216eced6efb5702823dae5c9dc43836680135c5c9529c44a7a",
       "source": null,
       "role": "documentation"
+    },
+    {
+      "path": "tools/chassis/ground_sequence/sequence.h",
+      "bytes": 1469,
+      "sha256": "eab5e783fb68470a204cb1228e577e31819c1add8f1439864887c2615e57f0aa",
+      "source": "tools/chassis/ground_sequence/sequence.h",
+      "role": ""
     },
     {
       "path": "tools/chassis/power_on_test/power_on_test.ino",
@@ -282,6 +491,13 @@
       "role": "source"
     },
     {
+      "path": "tools/chassis/power_on_test/README.md",
+      "bytes": 640,
+      "sha256": "7017f9cd2e9f0f63e10703640e1a4db6a536e6e5662697e797c3c2a68616d501",
+      "source": null,
+      "role": "documentation"
+    },
+    {
       "path": "tools/chassis/power_on_test/verify_serial.py",
       "bytes": 4083,
       "sha256": "b5987fcdbecc8d479f2a2815484cb6d1d65c796c9cef179a8efe2f495cf72e63",
@@ -289,11 +505,235 @@
       "role": "source"
     },
     {
-      "path": "tools/chassis/track_racer/README.md",
-      "bytes": 928,
-      "sha256": "4aa4dd3c67a08d34301c9db9908d3423a0529b0f81573a8f82ff30eabdb72fd5",
+      "path": "tools/chassis/track_race_v2/fault_history.h",
+      "bytes": 1586,
+      "sha256": "07825f23fda5339ff96793d6b92e397e227516d24108bca2c5be73f2696db1c3",
+      "source": "tools/chassis/track_race_v2/fault_history.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/policy.h",
+      "bytes": 9633,
+      "sha256": "bd037a978959d1e0838b89361f2b4869d116b25f26985624a91bed3c687773ff",
+      "source": "tools/chassis/track_race_v2/policy.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/README.md",
+      "bytes": 4631,
+      "sha256": "38a16e89ee0f62db0bc765986681ac7ca64d297390bc0494702c03eb3d84d6da",
       "source": null,
       "role": "documentation"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/sensors.h",
+      "bytes": 10136,
+      "sha256": "ad8d8d9888be244275b43580034e58188bee3ddd31edefa1d40e1e0b903d3bc3",
+      "source": "tools/chassis/track_race_v2/sensors.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/Adafruit_VL53L0X.cpp",
+      "bytes": 34640,
+      "sha256": "3ef62e9c0d85a91f8d36722e42633adc55fab409ef99c9f1dd879005ec4e3c26",
+      "source": "tools/chassis/track_race_v2/src/driver/Adafruit_VL53L0X.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/Adafruit_VL53L0X.h",
+      "bytes": 6345,
+      "sha256": "ce794579bb4c8c0ff0657fdcd22c65b6aeab14b0c632763a87ff190505b059e9",
+      "source": "tools/chassis/track_race_v2/src/driver/Adafruit_VL53L0X.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api.cpp",
+      "bytes": 88362,
+      "sha256": "6cfa0784600bd797e372b511761f4be10e97264b55d5c7269dd41ba607b8edb7",
+      "source": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_calibration.cpp",
+      "bytes": 38713,
+      "sha256": "decc93ba17e9a25b5eb9bc5349f4fcbd4e010c1452f11c40b7cc1a5e4abfcbf2",
+      "source": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_calibration.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_core.cpp",
+      "bytes": 68628,
+      "sha256": "d31da82edbad0f7fd89106340f7a006b61cd2e5b7c353460fb394978ce55953b",
+      "source": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_core.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_ranging.cpp",
+      "bytes": 2167,
+      "sha256": "523232cec2bf6d630491f6b1747881085c9ed740a2a4d076ae5c12530c174845",
+      "source": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_ranging.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_strings.cpp",
+      "bytes": 15314,
+      "sha256": "a3461daa0529ae9933a5d7ea1121262e6faa5a39f3b807bf334ff3e267002545",
+      "source": "tools/chassis/track_race_v2/src/driver/core/src/vl53l0x_api_strings.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/platform/src/vl53l0x_i2c_comms.cpp",
+      "bytes": 2616,
+      "sha256": "65828d563a9844b5051797ffd94f527fef335d8e50dfcc5bcc20fe26e4568c8d",
+      "source": "tools/chassis/track_race_v2/src/driver/platform/src/vl53l0x_i2c_comms.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/platform/src/vl53l0x_platform.cpp",
+      "bytes": 8837,
+      "sha256": "dd3c35cd35c47e683679e3e3685291e1e58d9cbedb759973046eed71d1382df3",
+      "source": "tools/chassis/track_race_v2/src/driver/platform/src/vl53l0x_platform.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/timing_guard.h",
+      "bytes": 168,
+      "sha256": "ee0cba6f3271ad293be766b47acbcb0993d5b64c3029303d5a34f84f204103d7",
+      "source": "tools/chassis/track_race_v2/src/driver/timing_guard.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/transport_guard.h",
+      "bytes": 2341,
+      "sha256": "8281edf899fc8f4df218ff493626a3f9bf062a4c409371f737e630eedd643f98",
+      "source": "tools/chassis/track_race_v2/src/driver/transport_guard.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/UPSTREAM_library.properties",
+      "bytes": 339,
+      "sha256": "f8bf8440608b53beddd0b1c8fe0888d2ea75d03536f7af27f1ae870aa9687dd3",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/UPSTREAM_README.md",
+      "bytes": 914,
+      "sha256": "9b7597be6637faacb53d7b334c4fa022ce4b4781fe8d49bc52e2a43c0a4b5b71",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_api.h",
+      "bytes": 76463,
+      "sha256": "ef57b6e1eec7a43196889f2ab48e413a8f2e8a25b97792d33f670887ab1b6f44",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_api.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_calibration.h",
+      "bytes": 4052,
+      "sha256": "505ac6bc7ff2efbf888a723c77d4dd222018a5afb28348a466778096cc12bef1",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_calibration.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_core.h",
+      "bytes": 4564,
+      "sha256": "948de4a0363339facc58c4e1bc5781b954b99cca1c13a4a105eb3969aeba8653",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_core.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_ranging.h",
+      "bytes": 1980,
+      "sha256": "eb01ffaf62c4cafd31a8ea49b892badab8704c67d8f3212b612f304c82531198",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_ranging.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_strings.h",
+      "bytes": 10594,
+      "sha256": "7b4f0e5f9353a31a18dfc28d7f887321e019102792226f1a86e2d1f29380d1e0",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_api_strings.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_def.h",
+      "bytes": 22995,
+      "sha256": "df50a202551d8c53851976d0d989314f73bb448b9b5821cd996417e316b8a2ca",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_def.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_device.h",
+      "bytes": 9982,
+      "sha256": "099bf61f7a8275b91f4582065f7423ac5654889b6c14aa349903b94e98923d03",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_device.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_i2c_platform.h",
+      "bytes": 1041,
+      "sha256": "b2987ebf97db244e6e47846632209e2e867b6e318d554c4aded1124b8f042c64",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_i2c_platform.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_interrupt_threshold_settings.h",
+      "bytes": 4766,
+      "sha256": "9e5e6c00af66497d03d6c6a13a269521c12b33c90455efcd3b8494487e1780c2",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_interrupt_threshold_settings.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_platform.h",
+      "bytes": 8545,
+      "sha256": "0b2b0276a06937671e4c6a53d3213cb52ca3ef268d14f4c178dfcb9ca818461e",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_platform.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_platform_log.h",
+      "bytes": 4317,
+      "sha256": "098560e3f178cdd592684b0fafd5746eb2d0e82f8f5e387bd798aa1ea6a41ec2",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_platform_log.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_tuning.h",
+      "bytes": 3647,
+      "sha256": "0e0331b7df1084d183248355f75d835b3446200b22f71765b5c63a470ff01c63",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_tuning.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/src/driver/vl53l0x_types.h",
+      "bytes": 4248,
+      "sha256": "68d88fa822460ee1e43fae9f28308d16899535a0f79ae1292070f9032c59ecb4",
+      "source": "tools/chassis/track_race_v2/src/driver/vl53l0x_types.h",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/tests/control_checks.cpp",
+      "bytes": 10287,
+      "sha256": "378c7482c0062e2f75200d20471096b7f0126fd1c49735a36d00e8eb736de33d",
+      "source": "tools/chassis/track_race_v2/tests/control_checks.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/tests/transport_compile_checks.cpp",
+      "bytes": 3355,
+      "sha256": "c6055abed61ff61caedd57e135336fa9f19029515ba9298d7e269478cde83498",
+      "source": "tools/chassis/track_race_v2/tests/transport_compile_checks.cpp",
+      "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_race_v2/track_race_v2.ino",
+      "bytes": 19642,
+      "sha256": "6864bdd3bb5602b6d9dc0033f0ba7521baaeae397e2fc4336ee3101fd0916734",
+      "source": "tools/chassis/track_race_v2/track_race_v2.ino",
+      "role": "source"
     },
     {
       "path": "tools/chassis/track_racer/analyze_log.py",
@@ -315,6 +755,13 @@
       "sha256": "781027c984521359581f5b043e96f00867ffab9ce684c196346ec37c5dbe0002",
       "source": "tools/chassis/track_racer/controller.h",
       "role": "source"
+    },
+    {
+      "path": "tools/chassis/track_racer/README.md",
+      "bytes": 1104,
+      "sha256": "2239575f2b74b604630dd7234890dcfc2d8df12c84889e2c999e384d2c93672b",
+      "source": null,
+      "role": "documentation"
     },
     {
       "path": "tools/chassis/track_racer/tests/default_gate.cpp",
@@ -373,9 +820,30 @@
       "role": "source"
     },
     {
+      "path": "tools/README.md",
+      "bytes": 1542,
+      "sha256": "732bc6cdbbc999717eeda361ee4cbe83a75247479d9ef6dc82a49586f998aecc",
+      "source": null,
+      "role": "documentation"
+    },
+    {
+      "path": "tools/servo/car_steering/car_steering.ino",
+      "bytes": 6178,
+      "sha256": "9e82b1222257988f04db0c76d15582a88a6179b9387a559ba9ca1dc7c16a369a",
+      "source": "tools/servo/car_steering/car_steering.ino",
+      "role": ""
+    },
+    {
+      "path": "tools/servo/car_steering/README.md",
+      "bytes": 2926,
+      "sha256": "4c811489d2406465d9b4e0d9e47b1a26b7c0a58e5adb9f9bd2730a6704e496f2",
+      "source": null,
+      "role": "documentation"
+    },
+    {
       "path": "tools/servo/README.md",
-      "bytes": 783,
-      "sha256": "72cadb1bf21a8b390e00bf7f82fdc033ad3a47920926f7214317b589c03b1af5",
+      "bytes": 1029,
+      "sha256": "5d12f6abc2a31add745e49143a486b2a957c8fdc5fc807aa07448d66f1b32c84",
       "source": null,
       "role": "documentation"
     },

@@ -1,0 +1,50 @@
+{
+  "firmware": "track_race_v2",
+  "version": "v2.14",
+  "compiled_at": "2026-10-28T15:55:12+08:00",
+  "uploaded_at": "2026-10-28T15:56:00+08:00",
+  "board": "ESP32 Dev Module (esp32:esp32:esp32)",
+  "core": "3.3.12",
+  "source_files": 30,
+  "program_bytes": 349755,
+  "static_ram_bytes": 27640,
+  "upload": {
+    "port": "COM4",
+    "baud": 115200,
+    "flash_segments_verified": 4,
+    "verification": "Hash of data verified",
+    "app_image_bytes": 349904,
+    "app_sha256": "3C742894E4B3EA3F258319B86C15C9A58C2C55EB97D5605E69BE8438013EA747"
+  },
+  "compile_time_assertions": [
+    "islandTurnHold",
+    "islandTurnRelease",
+    "islandNoReversal",
+    "forcedLeftIsland",
+    "forcedLeftAtFarFront",
+    "forcedLeftSuppressesOutsideReserve",
+    "firstIslandLeftRepulsion",
+    "firstIslandLeftRepulsionEarly",
+    "firstIslandArcRight",
+    "firstIslandArcFollow",
+    "firstIslandArcTightRight",
+    "firstIslandArcNearIsland",
+    "firstIslandArcFrontEscape",
+    "firstIslandArcEscapeHold",
+    "firstIslandArcEscapeRelease"
+  ],
+  "verified_scope": [
+    "compile and compile-time assertions",
+    "four-segment flash write verification",
+    "USB-only boot and WAIT/CENTER/COUNTDOWN/RUN path at bench",
+    "no actuator power during checks"
+  ],
+  "not_verified": [
+    "first-island right bend pass",
+    "full lap and finish detection",
+    "loaded speed and braking distance",
+    "R400/R850 swept path",
+    "wheel angle/return accuracy",
+    "long-duration power and competition reliability"
+  ]
+}

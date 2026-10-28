@@ -1,0 +1,31 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4876
+ho 0 tail 12 room 4
+load:0x40078000,len:16532
+load:0x40080400,len:3500
+entry 0x400805b4
+A20 v2.0 GROUND SEQUENCE - BOOT IDLE - START REQUIRED
+CONFIG center=1375 left=975 right=1775 duty=50 default_ms=1000 long_ms=3000 brake_ms=2000 servo_step_us=25 pre_center_ms=1000 home_hold_ms=1500; no range avoidance
+Order: center/hold, countdown, straight, brake, left arc, brake, right arc, brake, center/hold, DONE.
+Commands: START/START1 = 1s each leg, START3 = 3s each leg; STATUS; 0/x/! stops and latches.
+Use open test area, rear power off while flashing. Keep D057 disconnected with USB.
+G,100,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,200,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,300,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,400,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,500,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,600,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,700,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,800,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,900,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,1000,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,1100,IDLE,0,0,1375,0,0,0,0.000,0.000
+STATUS stage=IDLE duty=0/0 us=1375 servo_applied=0 motor_raw=0/0/0/0 lease=0 pwm_fault=0 drive_ms=1000
+G,1200,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,1300,IDLE,0,0,1375,0,0,0,0.000,0.000
+G,1400,IDLE,0,0,1375,0,0,0,0.000,0.000

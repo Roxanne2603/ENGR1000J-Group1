@@ -1,0 +1,142 @@
+{
+  "analyzed_at": "2026-10-26T20:59:38.487151+08:00",
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "full-1s",
+      "passed": true,
+      "drive_ms": 1000,
+      "stage_order": [
+        "PRE_CENTER",
+        "COUNTDOWN",
+        "STRAIGHT",
+        "BRAKE_STRAIGHT",
+        "STEER_LEFT",
+        "LEFT_ARC",
+        "BRAKE_LEFT",
+        "STEER_RIGHT",
+        "RIGHT_ARC",
+        "BRAKE_RIGHT",
+        "RETURN_CENTER",
+        "DONE"
+      ],
+      "drive_apply_intervals": [
+        {
+          "leg": 1,
+          "begin": 5416,
+          "end": 6411,
+          "ms": 995
+        },
+        {
+          "leg": 2,
+          "begin": 9496,
+          "end": 10491,
+          "ms": 995
+        },
+        {
+          "leg": 3,
+          "begin": 14216,
+          "end": 15211,
+          "ms": 995
+        }
+      ],
+      "pre_center_ms": 1000,
+      "left_steer_phase_ms": 1080,
+      "right_steer_phase_ms": 1720,
+      "home_phase_ms": 2080
+    },
+    {
+      "test": "full-3s",
+      "passed": true,
+      "drive_ms": 3000,
+      "stage_order": [
+        "PRE_CENTER",
+        "COUNTDOWN",
+        "STRAIGHT",
+        "BRAKE_STRAIGHT",
+        "STEER_LEFT",
+        "LEFT_ARC",
+        "BRAKE_LEFT",
+        "STEER_RIGHT",
+        "RIGHT_ARC",
+        "BRAKE_RIGHT",
+        "RETURN_CENTER",
+        "DONE"
+      ],
+      "drive_apply_intervals": [
+        {
+          "leg": 1,
+          "begin": 5416,
+          "end": 8411,
+          "ms": 2995
+        },
+        {
+          "leg": 2,
+          "begin": 11496,
+          "end": 14491,
+          "ms": 2995
+        },
+        {
+          "leg": 3,
+          "begin": 18216,
+          "end": 21211,
+          "ms": 2995
+        }
+      ],
+      "pre_center_ms": 1011,
+      "left_steer_phase_ms": 1080,
+      "right_steer_phase_ms": 1720,
+      "home_phase_ms": 2080
+    },
+    {
+      "test": "abort-countdown",
+      "passed": true,
+      "drive_ms": 3000,
+      "stage_order": [
+        "PRE_CENTER",
+        "COUNTDOWN"
+      ],
+      "drive_apply_intervals": []
+    },
+    {
+      "test": "abort-drive",
+      "passed": true,
+      "drive_ms": 1000,
+      "stage_order": [
+        "PRE_CENTER",
+        "COUNTDOWN",
+        "STRAIGHT"
+      ],
+      "drive_apply_intervals": [
+        {
+          "leg": 1,
+          "begin": 5416,
+          "end": 5431,
+          "ms": 15
+        }
+      ]
+    },
+    {
+      "test": "abort-steer",
+      "passed": true,
+      "drive_ms": 1000,
+      "stage_order": [
+        "PRE_CENTER",
+        "COUNTDOWN",
+        "STRAIGHT",
+        "BRAKE_STRAIGHT",
+        "STEER_LEFT"
+      ],
+      "drive_apply_intervals": [
+        {
+          "leg": 1,
+          "begin": 5416,
+          "end": 6411,
+          "ms": 995
+        }
+      ]
+    }
+  ],
+  "restored_idle_outputs_off": true,
+  "scope": "Disconnected actuator power; software timing and commands only"
+}
